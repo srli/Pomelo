@@ -1595,7 +1595,7 @@ button, .button {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
-  margin: 0 0 1.25rem;
+  margin: 0 0 0;
   position: relative;
   text-decoration: none;
   text-align: center;
@@ -3918,7 +3918,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group > li > button, .button-group > li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3936,7 +3936,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.stack > li > button, .button-group.stack > li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3945,7 +3945,7 @@ meta.foundation-mq-topbar {
 }
 /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.stack > li > button, .button-group.stack > li .button {
-  border-top: 1px solid;
+  border-top: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
   border-left-width: 0px;
   margin: 0;
@@ -3963,7 +3963,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.stack-for-small > li > button, .button-group.stack-for-small > li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3981,7 +3981,7 @@ meta.foundation-mq-topbar {
   }
   /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.stack-for-small > li > button, .button-group.stack-for-small > li .button {
-    border-left: 1px solid;
+    border-left: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
   }
   /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -3990,7 +3990,7 @@ meta.foundation-mq-topbar {
   }
   /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.stack-for-small > li > button, .button-group.stack-for-small > li .button {
-    border-top: 1px solid;
+    border-top: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
     border-left-width: 0px;
     margin: 0;
@@ -4009,7 +4009,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.radius > * > button, .button-group.radius > * .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4044,7 +4044,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.radius.stack > * > button, .button-group.radius.stack > * .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4053,7 +4053,7 @@ meta.foundation-mq-topbar {
 }
 /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.radius.stack > * > button, .button-group.radius.stack > * .button {
-  border-top: 1px solid;
+  border-top: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
   border-left-width: 0px;
   margin: 0;
@@ -4090,7 +4090,7 @@ meta.foundation-mq-topbar {
   }
   /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.radius.stack-for-small > * > button, .button-group.radius.stack-for-small > * .button {
-    border-left: 1px solid;
+    border-left: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
   }
   /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4127,7 +4127,7 @@ meta.foundation-mq-topbar {
   }
   /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.radius.stack-for-small > * > button, .button-group.radius.stack-for-small > * .button {
-    border-left: 1px solid;
+    border-left: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
   }
   /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4136,7 +4136,7 @@ meta.foundation-mq-topbar {
   }
   /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.radius.stack-for-small > * > button, .button-group.radius.stack-for-small > * .button {
-    border-top: 1px solid;
+    border-top: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
     border-left-width: 0px;
     margin: 0;
@@ -4173,7 +4173,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.round > * > button, .button-group.round > * .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4208,7 +4208,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.round.stack > * > button, .button-group.round.stack > * .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4217,7 +4217,7 @@ meta.foundation-mq-topbar {
 }
 /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.round.stack > * > button, .button-group.round.stack > * .button {
-  border-top: 1px solid;
+  border-top: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
   border-left-width: 0px;
   margin: 0;
@@ -4254,7 +4254,7 @@ meta.foundation-mq-topbar {
   }
   /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * .button {
-    border-left: 1px solid;
+    border-left: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
   }
   /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4291,7 +4291,7 @@ meta.foundation-mq-topbar {
   }
   /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * .button {
-    border-left: 1px solid;
+    border-left: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
   }
   /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4300,7 +4300,7 @@ meta.foundation-mq-topbar {
   }
   /* line 67, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
   .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * .button {
-    border-top: 1px solid;
+    border-top: 0 solid;
     border-color: rgba(255, 255, 255, 0.5);
     border-left-width: 0px;
     margin: 0;
@@ -4338,7 +4338,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.even-2 li > button, .button-group.even-2 li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4358,7 +4358,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.even-3 li > button, .button-group.even-3 li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4378,7 +4378,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.even-4 li > button, .button-group.even-4 li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4398,7 +4398,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.even-5 li > button, .button-group.even-5 li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4418,7 +4418,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.even-6 li > button, .button-group.even-6 li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4438,7 +4438,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.even-7 li > button, .button-group.even-7 li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4458,7 +4458,7 @@ meta.foundation-mq-topbar {
 }
 /* line 39, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-group.even-8 li > button, .button-group.even-8 li .button {
-  border-left: 1px solid;
+  border-left: 0 solid;
   border-color: rgba(255, 255, 255, 0.5);
 }
 /* line 45, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
@@ -4482,7 +4482,7 @@ meta.foundation-mq-topbar {
 /* line 195, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-bar .button-group {
   float: left;
-  margin-right: 0.625rem;
+  margin-right: 0;
 }
 /* line 32, ../bower_components/foundation/scss/foundation/components/_button-groups.scss */
 .button-bar .button-group div {

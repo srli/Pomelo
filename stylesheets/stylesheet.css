@@ -1,10 +1,105 @@
+/*CURRENT CUSTOM CSS*/
+
+body {
+	margin: 0 0 0 0 !important;
+	padding: 0; 
+}
+
+/*HEADER CSS*/
+
+.header {
+	font-family: "soon";
+	font-size: 700%;
+	background-color: #333;
+	text-align: center;
+	color: #fff;
+}
+
+/*NAV BAR*/
+
+.nav {
+	padding: 5px 0;
+	background-color: white;
+	position: -webkit-sticky;
+	top: 45px;
+	z-index: 1;
+	text-align: center;
+	color: #000;
+	height: 45px;
+}
+
+.nav table{
+	font-family: "soon";
+	font-size: 150%;
+	margin: 0 auto;
+	margin-top: -35px;
+	border-spacing: 40px;
+}
+
+.nav td:hover{
+	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+	font-weight: bold;
+}
+
+.sticky {
+	position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;
+    background-color: slategray; 
+    color: #fff;
+}  
+
+/*CONTENT*/
+
+.content {
+	font-family: "soon";
+	font-size: 250%;
+	width: 600px;
+	margin: 10px auto 100px;
+}
+
+
+
+/*DEFINING GLOBAL LINK DEFINITIONS*/
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*DEFINING CUSTOM FONTS*/
+
 @font-face{
 	font-family: "flower";
 	src: url('../fonts/flower.ttf') format('truetype');
-	font-size: 250%;
 }
 
-.journal{
-	font-family: "flower";
-	font-size: 250%;
+@font-face{
+	font-family: "poiret";
+	src: url('../fonts/poiret.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: "soon";
+	src: url('../fonts/soon.ttf') format('truetype');
 }
