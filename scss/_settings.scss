@@ -1187,13 +1187,13 @@ $sub-nav-active-cursor: default;
 
 //
 // TOP BAR
-//
+@import "foundation/components/top-bar";
 
-// $include-html-top-bar-classes: $include-html-classes;
+//$include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
-// $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: #888;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
@@ -1201,7 +1201,7 @@ $sub-nav-active-cursor: default;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(50);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;
@@ -1254,12 +1254,12 @@ $sub-nav-active-cursor: default;
 // $topbar-media-query: $medium-up;
 
 // Divider Styles
-// $topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
-// $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
+$topbar-divider-border-bottom: solid 1px  scale-color($topbar-bg-color, $lightness: 13%);
+$topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
-// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+$topbar-sticky-class: ".sticky";
+$topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 // ICON BAR
 

@@ -1,0 +1,10 @@
+@font-face{
+	font-family: "flower";
+	src: url('../fonts/flower.ttf') format('truetype');
+	font-size: 250%;
+}
+
+.journal{
+	font-family: "flower";
+	font-size: 250%;
+}
