@@ -8,28 +8,22 @@ body {
 
 /*CONTENT*/
 
+.square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+.content{
+	width: 60%;
+	margin: 0 auto;
+}
+
 .content p{
 	font-family: "soon";
 	font-size: 100%;
-	width: 60%;
-	margin: 0 auto;
 	color: #fff;
 	overflow: auto;
-}
-
-.about{
-	background-color: black;
-	height: 800px;
-}
-
-.contactme{
-	background-color: black;
-	height: 800px;
-}
-
-.work{
-	background-color: black;
-	height: 800px;
 }
 
 /*HEADER CSS*/
@@ -84,6 +78,7 @@ body {
 
 
 /*DEFINING GLOBAL LINK DEFINITIONS*/
+/*Default set to inherit from parent div, TO-DO: Set defaults*/
 
 a:link {
     text-decoration: none;
