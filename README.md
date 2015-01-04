@@ -1,29 +1,14 @@
-# Foundation Compass Template
+# Pomelon
+### _Only the best fruit ever_
 
-The easiest way to get started with Foundation + Compass.
+This is Sophie's personal website, clearly a work in progress.
 
-## Requirements
-
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org)
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
-
-## Quickstart
-
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-  
-Then when you're working on your project, just run the following command:
-
-```bash
-compass watch
-```
-
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```
+##To-do
+1. Home page design
+2. Unify static design across all pages
+3. Panel animations
+4. Website blocked out with placeholders
+5. Home page robot
+6. About Me text
+7. Project roundup w/ text + images
+8. Other cool stuff that can be added later
