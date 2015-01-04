@@ -2,25 +2,27 @@
 
 .homenav {
 	position: relative;
-	left: 30px;
-	top: 20px;
+	left: 5vh;
 }
 
 .homenav p{
 	color: blue;
 }
 
-.nav_element {
+.nav_element1 {
 	position: relative;
 	top:4vh;
 }
 
-.nav_element p{
+.nav_element1 {
 	position: relative;
-	left: 0px;
-	top: 0px;
+	top:8vh;
 }
 
+.nav_element1 {
+	position: relative;
+	top:12vh;
+}
 
 
 /*SHAPES*/
