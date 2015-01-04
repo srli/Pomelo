@@ -8,14 +8,8 @@ body {
 
 /*CONTENT*/
 
-.square {
-	width: 100px;
-	height: 100px;
-	background: red;
-}
-
 .content{
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -25,6 +19,9 @@ body {
 	color: #fff;
 	overflow: auto;
 }
+
+
+
 
 /*HEADER CSS*/
 

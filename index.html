@@ -5,18 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Maint
+        Homepage
     </title>
-    <link rel="stylesheet" href="stylesheets/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="stylesheets/homescreen.css" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+    <link rel='stylesheet' href='css/stylesheet.css'  type="text/css"/>
+
+    <link rel='stylesheet' media='screen and (max-width: 480px)' href='css/home_narrow.css' type="text/css"/>
+    <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 700px)' href='css/home_medium.css' type="text/css"/>
+    <link rel='stylesheet' media='screen and (min-width: 701px)' href='css/home_wide.css' type="text/css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/linkibs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
     <script src="js/navsticky.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="content"> 
-    <div class ="square" />
     <div class ="homenav">
+        <div class="nav_element"> <!-- Kind of a hack, we're tiling elements with relative positions -->
+        <div class ="circle" />
         <p>Let's type stuff!! Where does this show up? If I keep typing does it keep going down?</p>
+            
+            <div class="nav_element">
+            <div class ="circle" />
+            <p>Let's type stuff!! Where does this show up? If I keep typing does it keep going down?</p>
+                
+                <div class="nav_element">
+                <div class ="circle" />
+                <p>Let's type stuff!! Where does this show up? If I keep typing does it keep going down?</p>
+                </div>
+            
+            </div>
+        
+        </div>
     </div>
 </div>  
 </body>

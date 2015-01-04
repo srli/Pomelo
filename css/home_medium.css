@@ -1,0 +1,20 @@
+/*CSS Relevent for homescreen only*/
+
+.homenav {
+	position: relative;
+	left: 30px;
+	top: 20px;
+}
+
+.homenav p{
+	color: green;
+}
+
+.nav_element {
+	position: relative;
+	top:4vh;
+}
+
+.nav_element p{
+	
+}
