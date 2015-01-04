@@ -5,9 +5,37 @@ body {
 	padding: 0; 
 }
 
+
+/*CONTENT*/
+
+.content p{
+	font-family: "soon";
+	font-size: 100%;
+	width: 60%;
+	margin: 0 auto;
+	color: #fff;
+	overflow: auto;
+}
+
+.about{
+	background-color: black;
+	height: 800px;
+}
+
+.contactme{
+	background-color: black;
+	height: 800px;
+}
+
+.work{
+	background-color: black;
+	height: 800px;
+}
+
 /*HEADER CSS*/
 
 .header {
+	padding: 50px 0;
 	font-family: "soon";
 	font-size: 700%;
 	background-color: #333;
@@ -52,15 +80,6 @@ body {
     background-color: slategray; 
     color: #fff;
 }  
-
-/*CONTENT*/
-
-.content {
-	font-family: "soon";
-	font-size: 250%;
-	width: 600px;
-	margin: 10px auto 100px;
-}
 
 
 
