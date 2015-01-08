@@ -8,6 +8,7 @@
         Homepage
     </title>
     <link rel='stylesheet' href='css/stylesheet.css'  type="text/css"/>
+    <link href="css/hover.css" rel="stylesheet" media="all">
 
     <link rel='stylesheet' media='screen and (max-width: 480px)' href='css/home_narrow.css' type="text/css"/>
     <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 700px)' href='css/home_medium.css' type="text/css"/>
@@ -19,20 +20,21 @@
 <body>
 <div class="content"> 
     <div class ="homenav">
-
-        <div class="nav_element1"> <!-- Kind of a hack, we're tiling elements with relative positions -->
-        <div class ="circle" />
-        </div>
+        <div class="nav_element1"> <!-- Kind of a hack, we're tiling elements with relative positions to the previous div-->
+            <div class="decoration_bar"><a href="projects.html" class="nav_button hvr-sweep-to-right ">Projects</a>
+        </div></div>
             
         <div class="nav_element2">
-        <div class ="circle" />
-        </div>
+            <div class="decoration_bar"><a href="about.html" class="nav_button hvr-sweep-to-right ">About Me</a>
+        </div></div>
 
         <div class="nav_element3">
-        <div class ="circle" />
-        </div>    
-            
+            <div class="decoration_bar"><a href="journal.html" class="nav_button hvr-sweep-to-right ">Journal</a>
+        </div></div>
     </div>
+
+    <div class = "robot"></div>
+
 </div>  
 </body>
 </html>
