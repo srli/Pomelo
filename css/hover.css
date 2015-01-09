@@ -54,3 +54,24 @@
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
+
+/* Fade */
+.hvr-fade {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background-color: transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  color: slategrey;
+}

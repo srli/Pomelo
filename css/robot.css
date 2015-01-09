@@ -3,7 +3,7 @@
   height: 375px;
   border-radius: 3%;
   background: #52bb9d;
-  top: 25%;
+  top: 28%;
   right: 0%;
   position: absolute;
 }
@@ -94,8 +94,8 @@
 {
 position: relative;
 width: 520px;
-height: 650px;
-padding: 0px;
+height: 600px;
+padding: 15px;
 background: #FFFFFF;
 -webkit-border-radius: 28px;
 -moz-border-radius: 28px;
@@ -117,7 +117,7 @@ width: 0;
 z-index: 1;
 margin-top: -20px;
 right: -41px;
-top: 60%;
+top: 65%;
 }
 
 /*.bubble:before 
