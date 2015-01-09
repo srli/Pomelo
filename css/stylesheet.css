@@ -3,7 +3,7 @@
 body {
 	margin: 0 0 0 0 !important;
 	padding: 0;
-	background-image: url("../img/stardust.png");
+	background-image: url("../img/dark_angles.png");
 	font-family: "poiret";
 }
 
@@ -15,7 +15,6 @@ body {
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
-    /*border: solid black 2px;*/
 	/*background-image: url("../img/congruent_pentagon.png");*/
 
 }
