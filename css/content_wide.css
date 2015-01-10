@@ -1,3 +1,53 @@
+/*BOTTOM BAR*/
+.bottom_bar{
+	width: 1200px;
+	height: 1000px;
+	top: -145px;
+
+	position: absolute;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background: black;
+
+	opacity: 0.7;
+	z-index: -5;
+}
+
+.info_column{
+	width: 1200px;
+	height: 1000px;
+	top: -45px;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+.info_column p{
+	font-size: 2em;
+	color: white;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+/*MIDDLE BANNER*/
+.middle_banner{
+	width: 1000px;
+	height: 50px;
+	top: -120px;
+	position: relative;
+	margin: 0 auto;
+	background: url("../img/congruent_pentagon.png");
+	z-index: -1;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
 /*TOP BAR*/
 
 .top_bar{
@@ -7,7 +57,6 @@
 	right: 0;
 	position: relative;
 	margin: 0 auto;
-	border: solid 1px;
 }
 
 .profile_pic {
@@ -22,7 +71,7 @@
 
 	position: absolute;
 	left: 50%;
-	top: 45%;
+	top: 37%;
 	margin-left: -100px;
 }
 
@@ -30,7 +79,7 @@
 .bubble 
 {
 width: 400px;
-height: 150px;
+height: 125px;
 padding: 0px;
 background: #FFFFFF;
 -webkit-border-radius: 10px;
@@ -57,7 +106,11 @@ bottom: -15px;
 left: 110px;
 }
 
-
+.bubble p{
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+}
 
 /*SOCIAL MEDIA ICONS*/
 
@@ -66,7 +119,8 @@ left: 110px;
 	height:55px;
 	transition: 0.3s;
 	position: absolute;
-	top: 67%;
+	top: 60%;
+	visibility: hidden;
 }
 
 .email_me{
