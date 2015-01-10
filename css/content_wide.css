@@ -10,27 +10,46 @@
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 
-	background: black;
-
-	opacity: 0.7;
+	background: #E2E2E2;
 	z-index: -5;
 }
 
 .info_column{
 	width: 1200px;
 	height: 1000px;
-	top: -45px;
 	position: relative;
 	margin: 0 auto;
 
 }
 
-.info_column p{
-	font-size: 2em;
-	color: white;
+.info_column1{
+	width: 800px;
+	height: 800px;
+
+	position: absolute;
+}
+
+.info_column1 p{
+	font-size: 1.5em;
+	color: black;
 	margin-left: 50px;
 	margin-right: 50px;
 }
+
+.info_column2{
+	width: 300px;
+	height: 800px;
+	position: absolute;
+	right: 5%;
+	border: solid white 1px;
+}
+
+.info_column2 p{
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+}
+
 
 /*MIDDLE BANNER*/
 .middle_banner{
@@ -39,8 +58,9 @@
 	top: -120px;
 	position: relative;
 	margin: 0 auto;
-	background: url("../img/congruent_pentagon.png");
-	z-index: -1;
+	background-color: #52bb9d;
+/*	background: url("../img/congruent_pentagon.png");
+*/	z-index: -1;
 	
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
