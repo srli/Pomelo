@@ -3,41 +3,70 @@
 .top_bar{
 	width: 800px;
 	height: 400px;
-	top: 0;
+	top: 20px;
 	right: 0;
-	border: solid 1px;
-
 	position: relative;
 	margin: 0 auto;
+	border: solid 1px;
 }
 
 .profile_pic {
 	width: 200px;
 	height: 200px;
+
 	background: url("../img/face.png") center center;
   	background-size: 200px 200px;
-  	transition: 0.3s cubic-bezier(1, -1, 0, 2);
-  	-webkit-clip-path: circle(90px at center);
-	clip-path: circle(90px at center);
-
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-}
-
-.profile_pic:hover {
-   	-webkit-clip-path: circle(100px at center);
+  	-webkit-clip-path: circle(100px at center);
 	clip-path: circle(100px at center);
+	transition: 0.3s;
+
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	margin-left: -100px;
 }
+
+
+.bubble 
+{
+width: 400px;
+height: 150px;
+padding: 0px;
+background: #FFFFFF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+border: #7F7F7F solid 4px;
+
+position: absolute;
+left: 50%;
+margin-left: -200px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -15px;
+left: 110px;
+}
+
+
 
 /*SOCIAL MEDIA ICONS*/
 
 .media_icons{
 	width: 800px;
 	height:55px;
-
+	transition: 0.3s;
 	position: absolute;
-	top: 50%;
+	top: 67%;
 }
 
 .email_me{
