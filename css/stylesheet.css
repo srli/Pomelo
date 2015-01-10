@@ -7,16 +7,6 @@ body {
 	font-family: "poiret";
 }
 
-/*CONTENT*/
-
-.content{
-	height: 700px;
-	width: 1200px;
-	margin: auto;
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	/*background-image: url("../img/congruent_pentagon.png");*/
-}
 
 /*HEADER CSS*/
 

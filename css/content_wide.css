@@ -1,0 +1,101 @@
+/*TOP BAR*/
+
+.top_bar{
+	width: 800px;
+	height: 400px;
+	top: 0;
+	right: 0;
+	border: solid 1px;
+
+	position: relative;
+	margin: 0 auto;
+}
+
+.profile_pic {
+	width: 200px;
+	height: 200px;
+	background: url("../img/face.png") center center;
+  	background-size: 200px 200px;
+  	transition: 0.3s cubic-bezier(1, -1, 0, 2);
+  	-webkit-clip-path: circle(90px at center);
+	clip-path: circle(90px at center);
+
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.profile_pic:hover {
+   	-webkit-clip-path: circle(100px at center);
+	clip-path: circle(100px at center);
+}
+
+/*SOCIAL MEDIA ICONS*/
+
+.media_icons{
+	width: 800px;
+	height:55px;
+
+	position: absolute;
+	top: 50%;
+}
+
+.email_me{
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/email.png");
+	background-size: 50px 50px;
+	transition: 0.3s;
+	position: absolute;
+	right: 15%;
+	opacity: 0.5;
+}
+
+.email_me:hover{
+	opacity: 1;
+}
+
+.instagram_me{
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/instagram.png");
+	background-size: 50px 50px;
+	transition: 0.3s;
+	position: absolute;
+	right: 25%;
+	opacity: 0.5;
+}
+
+.instagram_me:hover{
+	opacity: 1;
+}
+
+.github_me{
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/github.png");
+	background-size: 50px 50px;
+	transition: 0.3s;
+	position: absolute;
+	left: 15%;
+	opacity: 0.5;
+}
+
+.github_me:hover{
+	opacity: 1;
+}
+
+.linkedin_me{
+	width: 50px;
+	height: 50px;
+	background-image: url("../img/linkedin.png");
+	background-size: 50px 50px;
+	transition: 0.3s;
+	position: absolute;
+	left: 25%;
+	opacity: 0.5;
+}
+
+.linkedin_me:hover{
+	opacity: 1;
+}
