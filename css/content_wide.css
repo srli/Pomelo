@@ -2,8 +2,6 @@
 .bottom_bar{
 	width: 1200px;
 	height: 1000px;
-	top: -145px;
-
 	position: absolute;
 
 	-webkit-border-radius: 5px;
@@ -16,17 +14,19 @@
 
 .info_column{
 	width: 1200px;
-	height: 1000px;
+	height: 400px;
+	top: -145px;
 	position: relative;
 	margin: 0 auto;
-
+	overflow: hidden;
 }
 
 .info_column1{
 	width: 800px;
-	height: 800px;
+	height: 350px;
 
 	position: absolute;
+	top: 5%;
 }
 
 .info_column1 p{
@@ -38,9 +38,10 @@
 
 .info_column2{
 	width: 300px;
-	height: 800px;
+	height: 350px;
 	position: absolute;
 	right: 5%;
+	top: 5%;
 	border: solid white 1px;
 }
 
@@ -87,12 +88,17 @@
   	background-size: 200px 200px;
   	-webkit-clip-path: circle(100px at center);
 	clip-path: circle(100px at center);
-	transition: 0.3s;
+  	transition: 0.3s cubic-bezier(1, -1, 0, 2);
 
 	position: absolute;
 	left: 50%;
 	top: 37%;
 	margin-left: -100px;
+}
+
+.profile_pic:hover {
+   	-webkit-clip-path: circle(110px at center);
+	clip-path: circle(110px at center);
 }
 
 
@@ -135,12 +141,12 @@ left: 110px;
 /*SOCIAL MEDIA ICONS*/
 
 .media_icons{
-	width: 800px;
+	width: 400px;
 	height:55px;
 	transition: 0.3s;
 	position: absolute;
-	top: 60%;
-	visibility: hidden;
+	top: 70%;
+	left: 5%;
 }
 
 .email_me{
@@ -150,7 +156,7 @@ left: 110px;
 	background-size: 50px 50px;
 	transition: 0.3s;
 	position: absolute;
-	right: 15%;
+	left: 0%;
 	opacity: 0.5;
 }
 
@@ -165,7 +171,7 @@ left: 110px;
 	background-size: 50px 50px;
 	transition: 0.3s;
 	position: absolute;
-	right: 25%;
+	left: 25%;
 	opacity: 0.5;
 }
 
@@ -180,7 +186,7 @@ left: 110px;
 	background-size: 50px 50px;
 	transition: 0.3s;
 	position: absolute;
-	left: 15%;
+	left: 50%;
 	opacity: 0.5;
 }
 
@@ -195,7 +201,7 @@ left: 110px;
 	background-size: 50px 50px;
 	transition: 0.3s;
 	position: absolute;
-	left: 25%;
+	left: 75%;
 	opacity: 0.5;
 }
 
