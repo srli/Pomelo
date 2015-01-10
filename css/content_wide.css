@@ -1,7 +1,7 @@
 /*BOTTOM BAR*/
-.bottom_bar{
+.info_column_background{
 	width: 1200px;
-	height: 1000px;
+	height: 400px;
 	position: absolute;
 
 	-webkit-border-radius: 5px;
@@ -20,6 +20,10 @@
 	margin: 0 auto;
 	overflow: hidden;
 }
+
+/*.info_column a:link, a:visited{
+	color: #52bb9d !important;
+}*/
 
 .info_column1{
 	width: 800px;
@@ -59,15 +63,89 @@
 	top: -120px;
 	position: relative;
 	margin: 0 auto;
+/*	background: url("../img/congruent_pentagon.png");*/	
+
+	color: #d5fedc;
+	font-weight: bold;
+	font-size: 1em;
+}
+/*
+.middle_banner a:link, a:visited {
+	font-size: 1.2em;
+	color: #d5fedc !important;
+}*/
+
+.middle_banner_background{
+	width: 1000px;
+	height: 50px;
+	position: absolute;
+
 	background-color: #52bb9d;
-/*	background: url("../img/congruent_pentagon.png");
-*/	z-index: -1;
-	
+	z-index: -2;
+
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
 
+.home_box{
+	width: 100px;
+	height: 50px;
+
+	background: black;
+	opacity: 0;
+	position: absolute;
+	top: 22%;
+	left: 2%
+}
+
+.arrow_home {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 
+	
+	border-right: 15px solid #d5fedc;
+
+	position: absolute;
+	top: 22%;
+	left: 2%
+
+}
+
+.arrow_home p{
+	padding-left: 25px;
+	margin-top: -8px; 
+}
+
+.projects_box{
+	width: 100px;
+	height: 50px;
+	background: black;
+	opacity: 0;
+
+	position: absolute;
+	top: 22%;
+	left: 96.5%;
+}
+
+
+.arrow_projects {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	
+	border-left: 15px solid #d5fedc;
+	position: absolute;
+	top: 22%;
+	left: 96.5%;
+}
+
+.arrow_projects p{
+	margin-top: -8px;
+	margin-left: -90px;
+}
 
 /*TOP BAR*/
 
