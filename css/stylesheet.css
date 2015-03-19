@@ -3,8 +3,8 @@
 body {
 	margin: 0 0 0 0 !important;
 	padding: 0;
-	background-image: url("../img/dark_angles.png");
-	font-family: "poiret";
+	background-image: url("../img/stardust.png");
+	font-family: "soon";
 }
 
 
@@ -12,7 +12,7 @@ body {
 
 .header {
 	padding: 50px 0;
-	font-family: "soon";
+	font-family: "amatic";
 	font-size: 700%;
 	background-color: #333;
 	text-align: center;
@@ -47,15 +47,15 @@ body {
 }
 
 .sticky {
-	position: fixed;  
-    width: 100%;  
-    left: 0;  
-    top: 0;  
-    z-index: 100;  
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
     border-top: 0;
-    background-color: slategray; 
+    background-color: slategray;
     color: #fff;
-}  
+}
 
 
 
@@ -103,4 +103,9 @@ a:active {
 @font-face{
 	font-family: "soon";
 	src: url('../fonts/soon.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: "amatic";
+	src: url('../fonts/amatic.ttf') format('truetype');
 }

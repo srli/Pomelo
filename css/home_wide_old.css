@@ -8,21 +8,19 @@
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
+	/*background-image: url("../img/congruent_pentagon.png");*/
 }
 
 /*NAVIGATION DIVS*/
 
-.hometext {
+.homenav {
+	height: 4.2em;
+	width: 700px;
 	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+	top: 10%;
+	left: 52%;
 	color: white;
-	font-family: "flower";
-	font-size: 700%;
-	/*width: 200px;
-	height: auto;
-*/}
+}
 
 
 .nav_element1 {
@@ -56,3 +54,21 @@
 	text-align: center;
 	line-height: 2.1em;
 }
+
+/*.decoration_bar{
+	display: inline-block;
+	position: absolute;
+	height: 2.1em;
+	width: 8px;
+	left: 0px;
+	background-image: url("../img/congruent_pentagon.png");
+}
+
+.nav_button:hover .decoration_bar{
+	display: inline-block;
+}
+
+.nav_button .decoration_bar {
+    display: none;
+}
+*/
