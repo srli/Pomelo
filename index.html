@@ -18,7 +18,9 @@
 </head>
 <body>
     <div class="content">
-        <div class="hometext"> <div id="titletext">JUST SOPHIE.</div></div>
+        <div class="hometext">HI, MY NAME IS <div id="titletext"><a href="about.html">SOPHIE</a></div>
+        </div>
+
     </div>
 
 <script src="js/jquery-1.7.2.min.js"></script>
@@ -29,7 +31,15 @@
             speed: 200,
             rotation: 0.5
         });
-    $('#titletext').trigger("startRumble");
+
+    $('#titletext').trigger('startRumble');
+
+    $('#titletext').hover(function(){
+        $(this).trigger('stopRumble');
+    }, function(){
+        $(this).trigger('startRumble');
+    });
+
     });
 </script>
 </body>

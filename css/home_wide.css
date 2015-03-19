@@ -19,40 +19,17 @@
   	transform: translate(-50%, -50%);
 	color: white;
 	font-family: "flower";
-	font-size: 700%;
+	font-size: 6em;
 	/*width: 200px;
 	height: auto;
 */}
 
-
-.nav_element1 {
-	position: relative;
-	left: 0%;
-	top: 0%;
-}
-
-.nav_element2 {
-	position: relative;
-	left: 30%;
-	top: -100%;
-}
-
-.nav_element3 {
-	position: relative;
-	left: 60%;
-	top: -200%;
-}
-
-
-/*SHAPES*/
-
-.nav_button{
-	display: inline-block;
-	height: 2.1em;
-	width: 175px;
-
-	font-size: 2em;
-	font-weight: bold;
-	text-align: center;
-	line-height: 2.1em;
+.hometext .arrow{
+	height: 100px;
+	width: 200px;
+	border: 1px solid red;
+	background: url("../img/arrow.png") center center;
+	background-size: 270px;
+	background-repeat: no-repeat;
+	font-size: 1em !important;
 }
