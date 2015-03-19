@@ -36,20 +36,17 @@
 .menu {
 	position: absolute;
 	width: 500px;
-  	top: 78%;
+  	top: 76%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 	color: white;
 	font-family: "flower";
-	border: 1px solid black;
 	font-size: 3em;
-
 }
 
 .nav_element1 {
 	height: 50px;
 	width: 125px;
-	background-color: slategrey;
 	position: absolute;
 	left: 0%;
 }
@@ -57,7 +54,6 @@
 .nav_element2 {
 	height: 50px;
 	width: 125px;
-	background-color: slategrey;
 	position: absolute;
 	left: 38%;
 }
@@ -65,51 +61,6 @@
 .nav_element3 {
 	height: 50px;
 	width: 125px;
-	background-color: slategrey;
 	position: absolute;
 	right: 0%;
-}
-
-/*NAVIGATION SPEECH BUBBLE*/
-.bubble
-{
-position: relative;
-width: 315px;
-height: 120px;
-padding: 0px;
-background: #FFFFFF;
--webkit-border-radius: 15px;
--moz-border-radius: 15px;
-border-radius: 15px;
-border: #7F7F80 solid 4px;
-}
-
-.bubble:after
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 0 15px 21px;
-border-color: #FFFFFF transparent;
-display: block;
-width: 0;
-z-index: 1;
-margin-left: -15px;
-top: -21px;
-left: 52%;
-}
-
-.bubble:before
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 0 18px 24px;
-border-color: #7F7F80 transparent;
-display: block;
-width: 0;
-z-index: 0;
-margin-left: -18px;
-top: -28px;
-left: 52%;
 }
