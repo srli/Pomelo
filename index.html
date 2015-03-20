@@ -28,9 +28,6 @@
         </div>
         <div class="flavortext">Where do you want to go?</div>
 
-    </div>
-
-
     <div class ="menu">
         <div class="nav_element1"> <!-- Kind of a hack, we're tiling elements with relative positions to the previous div-->
             <a href="projects.html" class="nav_button hvr-fade">Projects</a>
@@ -44,14 +41,71 @@
           <a href="journal.html" class="nav_button hvr-fade ">Journal</a>
         </div>
     </div>
+    </div>
+
 
 
 <script>
-    $(function(){
-        $('#titletext').jrumble({
-            speed: 200,
-            rotation: 0.5
-        });
+$(document).ready(function(){
+        var timeout = 0;
+        var hovering = false;
+
+
+    $('.menu').hide();
+    $('.flavortext').hide();
+
+    $('#titletext')
+        .on("mouseenter", function () {
+        hovering = true;
+
+        $('.menu')
+            .stop(true, true)
+            .fadeIn(1500);
+
+        $('.flavortext')
+            .stop(true, true)
+            .fadeIn(500);
+
+        if (timeout > 0){
+            clearTimeout(timeout);
+        }
+        })
+
+        .on("mouseleave", function () {
+            resetHover();
+      });
+
+    $(".menu")
+        .on("mouseenter", function (){
+            hovering = true;
+            startTimeout();
+        })
+        .on("mouseleave", function (){
+            resetHover();
+        })
+
+    function startTimeout() {
+        timeout = setTimeout(function() {closeMenu();}, 7000);
+    }
+
+    function closeMenu(){
+        if(!hovering){
+            $(".menu, .flavortext")
+                .stop(true, true)
+                .fadeOut(400)
+        }
+    }
+
+    function resetHover() {
+        hovering = false;
+        startTimeout();
+    }
+
+    //Rumble stuff
+    $('#titletext').jrumble({
+        speed: 200,
+        rotation: 0.5
+    });
 
     $('#titletext').trigger('startRumble');
 
@@ -61,29 +115,7 @@
         $(this).trigger('startRumble');
     });
 
-    $('.menu').hide();
-    $('.flavortext').hide();
-
-    $('#titletext')
-        .on("mouseenter", function () {
-        // Open the menu
-        $('.menu')
-            .stop(true, true)
-            .fadeIn(400);
-
-        $('.flavortext')
-            .stop(true, true)
-            .fadeIn(800);
-        })
-
-
-       /* .on("mouseleave", function () {
-        $('.menu')
-            .stop(true, true)
-            .fadeOut(400);
-        });*/
-
-    });
+});
 </script>
 
 </body>
