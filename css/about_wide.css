@@ -63,7 +63,7 @@
 	top: -120px;
 	position: relative;
 	margin: 0 auto;
-/*	background: url("../img/congruent_pentagon.png");*/
+/*	background: url("../img/congruent_pentagon.png");*/	
 
 	color: #d5fedc;
 	font-weight: bold;
@@ -100,11 +100,11 @@
 }
 
 .arrow_home {
-	width: 0;
-	height: 0;
+	width: 0; 
+	height: 0; 
 	border-top: 15px solid transparent;
-	border-bottom: 15px solid transparent;
-
+	border-bottom: 15px solid transparent; 
+	
 	border-right: 15px solid #d5fedc;
 
 	position: absolute;
@@ -115,7 +115,7 @@
 
 .arrow_home p{
 	padding-left: 25px;
-	margin-top: -8px;
+	margin-top: -8px; 
 }
 
 .projects_box{
@@ -131,11 +131,11 @@
 
 
 .arrow_projects {
-	width: 0;
-	height: 0;
+	width: 0; 
+	height: 0; 
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
-
+	
 	border-left: 15px solid #d5fedc;
 	position: absolute;
 	top: 22%;
@@ -180,7 +180,7 @@
 }
 
 
-.bubble
+.bubble 
 {
 width: 400px;
 height: 125px;
@@ -196,7 +196,7 @@ left: 50%;
 margin-left: -200px;
 }
 
-.bubble:after
+.bubble:after 
 {
 content: '';
 position: absolute;

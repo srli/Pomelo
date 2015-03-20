@@ -8,17 +8,6 @@ body {
 }
 
 
-/*HEADER CSS*/
-
-.header {
-	padding: 50px 0;
-	font-family: "amatic";
-	font-size: 700%;
-	background-color: #333;
-	text-align: center;
-	color: #fff;
-}
-
 /*NAV BAR*/
 
 .nav {

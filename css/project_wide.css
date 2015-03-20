@@ -1,0 +1,140 @@
+.content{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project_gallary{
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+}
+
+.headertext {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  font-family: "flower";
+  font-size: 7em;
+  color: #5cd9fd;
+  width: 300px;
+  }
+
+.instructiontext{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "amatic";
+  color: white;
+  font-size: 2em;
+  width: 200px;
+}
+
+.flavortext{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "flower";
+  font-size: 3em;
+}
+
+
+/*NAVIGATION DIVS*/
+.menu {
+  position: absolute;
+  width: 500px;
+  top: 75px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "flower";
+  font-size: 3em;
+}
+
+.nav_element1 {
+  height: 50px;
+  width: 125px;
+  position: absolute;
+  left: 0%;
+}
+
+.nav_element2 {
+  height: 50px;
+  width: 125px;
+  position: absolute;
+  left: 38%;
+}
+
+.nav_element3 {
+  height: 50px;
+  width: 125px;
+  position: absolute;
+  right: 0%;
+}
+
+
+
+/*BOX IMAGES CSS*/
+h2 {
+  font-family: "flower";
+  color: #fff;
+  transition: 0.3s;
+}
+
+
+.projContainer {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 340px;
+  height: 228px;
+  cursor: pointer;
+}
+
+.projContainer img {
+transition: 0.3s;
+}
+
+.projContainer:hover img {
+ transform: scale(1.2);
+ -webkit-transform: scale(1.2);
+}
+
+.projContainer:hover h2 {
+    padding-top: 10%;
+}
+
+.projInfoContainer {
+  position: absolute;
+  background: rgba(5,5,5,0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.projContainer:hover .projInfoContainer {
+  opacity: 1;
+}
+
+.projCat {
+  color: #5cd9fd;
+  font-weight: bold;
+}
+
+.projSpec {
+ color: #aaa;
+ font-family: sans-serif;
+}
+}
