@@ -19,6 +19,7 @@
 	color: white;
 	font-family: "flower";
 	font-size: 6em;
+	width: auto;
 }
 
 .flavortext{
@@ -31,6 +32,13 @@
 	font-size: 3em;
 }
 
+.sophie_descriptor{
+	margin-top: 22%;
+	margin-left: 700px;
+	font-family: "flower";
+	color: #d5fedc;
+	font-size: 4em;
+}
 
 /*NAVIGATION DIVS*/
 .menu {

@@ -35,7 +35,7 @@
 
 .flavortext{
   position: absolute;
-  top: 50px;
+  top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -48,7 +48,7 @@
 .menu {
   position: absolute;
   width: 500px;
-  top: 75px;
+  top: 150px;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
