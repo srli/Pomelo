@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+	<title>jRumble | A jQuery Plugin That Rumbles Elements</title>
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<div id="content">
+		<h3>Ranges</h3>
+
+		<div class="demo-box">
+			<h4>x: 2<br/>y: 2<br/>rotation: 1</h4>
+			<div id="demo1">1</div>
+		</div>
+
+		<div class="demo-box">
+			<h4>x: 10<br/>y: 10<br/>rotation: 4</h4>
+			<div id="demo2">2</div>
+		</div>
+
+		<div class="demo-box">
+			<h4>x: 4<br/>y: 0<br/>rotation: 0</h4>
+			<div id="demo3">3</div>
+		</div>
+
+		<div class="demo-box last">
+			<h4>x: 0<br/>y: 0<br/>rotation: 5</h4>
+			<div id="demo5">4</div>
+		</div>
+
+
+	</div>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.jrumble.1.3.min.js"></script>
+<script src="js/prettify.js"></script>
+<script>
+$(function(){
+	/*========================================================*/
+	/* Ranges
+	/*========================================================*/
+	$('#demo1').jrumble({
+		x: 2,
+		y: 2,
+		rotation: 1
+	});
+
+	$('#demo2').jrumble({
+		x: 10,
+		y: 10,
+		rotation: 4
+	});
+
+	$('#demo3').jrumble({
+		x: 4,
+		y: 0,
+		rotation: 0
+	});
+
+	$('#demo5').jrumble({
+		x: 0,
+		y: 0,
+		rotation: 5,
+		speed: 200
+	});
+
+	$('#demo1, #demo2, #demo3').hover(function(){
+		$(this).trigger('startRumble');
+	}, function(){
+		$(this).trigger('stopRumble');
+	});
+
+	$('#demo5').trigger('startRumble');
+
+});
+</script>
+</body>
+</html>
