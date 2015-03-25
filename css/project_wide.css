@@ -82,9 +82,9 @@
 /*PROJECT GALLERY CSS*/
 .project_gallary{
   position: absolute;
-  top: 550px;
+  top: 225px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   width: 1200px;
   height: auto;
   border: 1px solid black;
@@ -104,7 +104,7 @@ h2 {
   position: relative;
   vertical-align: top;
   width: 275px;
-  height: 500px;
+  height: 450px;
   cursor: pointer;
   margin: 20px;
   border: 20px solid white;
