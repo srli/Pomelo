@@ -87,7 +87,6 @@
   transform: translate(-50%);
   width: 1200px;
   height: auto;
-  border: 1px solid black;
 }
 
 h2 {
@@ -98,26 +97,31 @@ h2 {
 
 
 .projContainer {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   overflow: hidden;
-  position: relative;
-  vertical-align: top;
-  width: 275px;
-  height: 450px;
+  width: 320px;
+  height: 520px;
   cursor: pointer;
   margin: 20px;
   border: 20px solid white;
 }
 
+/*PROJ Hover switchy stuff*/
 .projContainer img {
-transition: 0.3s;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.projContainer:hover img {
- transform: scale(1.2);
- -webkit-transform: scale(1.2);
+.projContainer:hover img.top{
+  opacity:0;
 }
+
 
 .projContainer:hover h2 {
     padding-top: 10%;
@@ -125,13 +129,13 @@ transition: 0.3s;
 
 .projInfoContainer {
   position: absolute;
-  background: rgba(5,5,5,0.8);
-  width: 100%;
-  height: 100%;
+  background: rgba(255,255,255,1);
+  width: 105%;
+  height: 25%;
   top: 0;
   left: 0;
-  z-index: 3;
-  opacity: 0;
+  z-index: 20;
+  opacity: 1;
   transition: 0.2s;
 }
 
@@ -147,5 +151,4 @@ transition: 0.3s;
 .projSpec {
  color: #aaa;
  font-family: sans-serif;
-}
 }
