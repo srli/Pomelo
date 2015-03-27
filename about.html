@@ -8,19 +8,40 @@
         About Me
     </title>
     <link rel='stylesheet' href='css/stylesheet.css'  type="text/css"/>
-    <link href="css/hover.css" rel="stylesheet" media="all">
 
     <link rel='stylesheet' media='screen and (max-width: 480px)' href='css/content_narrow.css' type="text/css"/> <!-- Phone -->
     <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 700px)' href='css/content_medium.css' type="text/css"/> <!-- Tablet -->
-    <link rel='stylesheet' media='screen and (min-width: 701px)' href='css/content_wide.css' type="text/css"/> <!-- Desktop -->
 
-    <script src="https://ajax.googleapis.com/ajax/linkibs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
-    <script href="js/navsticky.js" type="text/javascript"></script>
+    <link rel='stylesheet' media='screen and (min-width: 701px)' href='css/about_wide.css' type="text/css"/> <!-- Desktop -->
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery.jrumble.1.3.min.js"></script>
 
 </head>
 <body>
+<body>
+<div class="content">
+    <div class="headerbox">
+        <div class="bubble">    </div>
+        <div class="headertext">About Me</div>
 
-<div class="top_bar">
+        <div class="flavortext">Where to go where to go</div>
+
+        <div class ="menu">
+            <div class="nav_element1"> <!-- Kind of a hack, we're tiling elements with relative positions to the previous div-->
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav_element2">
+               <a href="about.html">Projects</a>
+            </div>
+            <div class="nav_element3">
+              <a href="http://blog.justsophie.com/">Blog</a>
+            </div>
+        </div>
+        <div class="profile_pic"></div>
+</div>
+</div>
+<!-- <div class="top_bar">
     <div class="profile_pic"></div>
     <div class="bubble"><p>I'M SOPHIE!</p></div>
 </div>
@@ -45,9 +66,9 @@
     <div class="info_column2">
     <p>
         I recently...
-        Ran X miles X days ago<br /> <!-- MAP IMAGE HERE -->
+        Ran X miles X days ago<br />
         Committed to X with the message X <br />
-        Baked X <br /> <!-- INSTAGRAM IMAGE HERE -->
+        Baked X <br />
     </p>
 
     </div>
@@ -61,7 +82,89 @@
 
     <div class="info_column_background">
     </div>
-</div>
+</div> -->
+<script type="text/javascript">
+$(document).ready(function(){
+    //menu stuff
 
+        var timeout = 0;
+        var hovering = false;
+
+
+    $('.menu').hide();
+    $('.flavortext').hide();
+
+    $('.headertext')
+        .on("mouseenter", function () {
+        hovering = true;
+
+        $('.headertext, .bubble')
+            .stop(true, true)
+            .fadeOut(200);
+
+        $('.menu')
+            .stop(true, true)
+            .fadeIn(500);
+
+        $('.flavortext')
+            .stop(true, true)
+            .fadeIn(500);
+
+
+        if (timeout > 0){
+            clearTimeout(timeout);
+        }
+        })
+
+        .on("mouseleave", function () {
+            resetHover();
+      });
+
+    $(".menu")
+        .on("mouseenter", function (){
+            hovering = true;
+            startTimeout();
+        })
+        .on("mouseleave", function (){
+            resetHover();
+        })
+
+    function startTimeout() {
+        timeout = setTimeout(function() {closeMenu();}, 3000);
+    }
+
+    function closeMenu(){
+        if(!hovering){
+            $('.headertext, .bubble')
+                .stop(true, true)
+                .fadeIn(400);
+
+            $(".menu, .flavortext")
+                .stop(true, true)
+                .fadeOut(400);
+        }
+    }
+
+    function resetHover() {
+        hovering = false;
+        startTimeout();
+    }
+
+    //Rumble stuff
+    $('.headertext').jrumble({
+        speed: 200,
+        rotation: 0.5
+    });
+
+    $('.headertext').trigger('startRumble');
+
+    $('.headertext').hover(function(){
+        $(this).trigger('stopRumble');
+    }, function(){
+        $(this).trigger('startRumble');
+    });
+
+});
+</script>
 </body>
 </html>
