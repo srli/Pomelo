@@ -89,11 +89,7 @@
   height: auto;
 }
 
-h2 {
-  font-family: "flower";
-  color: #fff;
-  transition: 0.3s;
-}
+
 
 
 .projContainer {
@@ -107,6 +103,8 @@ h2 {
   margin: 20px;
   border: 20px solid white;
 }
+
+
 
 /*PROJ Hover switchy stuff*/
 .projContainer img {
@@ -123,9 +121,9 @@ h2 {
 }
 
 
-.projContainer:hover h2 {
+/*.projContainer:hover h2 {
   padding-top: 10%;
-}
+}*/
 
 .projInfoContainer {
   position: absolute;
@@ -138,6 +136,14 @@ h2 {
   z-index: 3;
 }
 
+p {
+  text-align: center;
+  line-height: 10%;
+  font-size: 2em;
+  color: #6E6E6E;
+  font-weight: bold;
+}
+
 .projContainer:hover .projInfoContainer {
   top: 75%;
   -webkit-transition: top 0.5s ease-in-out;
@@ -148,7 +154,6 @@ h2 {
 
 .projCat {
   color: #5cd9fd;
-  font-weight: bold;
 }
 
 .projSpec {
