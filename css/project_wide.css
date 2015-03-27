@@ -124,23 +124,26 @@ h2 {
 
 
 .projContainer:hover h2 {
-    padding-top: 10%;
+  padding-top: 10%;
 }
 
 .projInfoContainer {
   position: absolute;
   background: rgba(255,255,255,1);
-  width: 105%;
-  height: 25%;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  opacity: 1;
-  transition: 0.2s;
+  width: 75%;
+  height: 10%;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 3;
 }
 
 .projContainer:hover .projInfoContainer {
-  opacity: 1;
+  top: 75%;
+  -webkit-transition: top 0.5s ease-in-out;
+  -moz-transition: top 0.5s ease-in-out;
+  -o-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 
 .projCat {
