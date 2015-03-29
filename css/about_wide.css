@@ -14,12 +14,12 @@
 }
 
 .info_column1{
-	width: 550px;
-	height: 400px;
+	width: 575px;
+	height: 450px;
 
 	margin: 10px;
 
-	float: left;
+	float: right;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -133,10 +133,11 @@
 /*PROFILE PIC*/
 .profile_wrapper {
 	width: 400px;
-	height: 300px;
+	height: 600px;
 
 	position: absolute;
-	right:0;
+	top: 0;
+	left:10%;
 }
 
 .profile_pic {
@@ -153,7 +154,7 @@
 	position: absolute;
 	left: 0%;
 	margin-left: -100px;
-	top: 75%;
+	top: 40%;
 	z-index: 20;
 
 }
@@ -163,6 +164,12 @@
 	clip-path: circle(110px at center);
 }
 
+.bubble_text{
+ font-family: "flower";
+  font-size: 3em;
+  color: #5cd9fd;
+
+}
 
 .bubble
 {
@@ -203,7 +210,7 @@ left: 70px;
 	height:55px;
 	transition: 0.3s;
 	position: absolute;
-	top: 70%;
+	top: 50%;
 	left: 5%;
 }
 
