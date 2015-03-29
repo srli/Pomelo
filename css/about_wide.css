@@ -4,6 +4,57 @@
   text-align: center;
 }
 
+/*INFO COLUMN CSS*/
+.info_column{
+	width: 1200px;
+	margin: 0 auto;
+
+	position: absolute;
+	top: 225px;
+}
+
+.info_column1{
+	width: 550px;
+	height: 400px;
+
+	margin: 10px;
+
+	float: left;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color:rgba(226, 226, 226, 0.7);
+
+}
+
+.info_column1 p{
+	font-family: "flower";
+	font-size: 2.2em;
+	padding: 10px;
+	color: black;
+	text-align: left;
+	}
+
+.info_column2{
+	width: 550px;
+	height: 400px;
+
+	margin: 10px;
+
+	float: right;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	background-color:rgba(226, 226, 226, 0.7);
+}
+
+.info_column2 p{
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+}
+
 /*HEADER CSS*/
 
 .headerbox{
@@ -29,7 +80,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "amatic";
-  color:#6E6E6E;
+  color: white;
   font-size: 2em;
   width: 200px;
 }
@@ -79,20 +130,19 @@
 }
 
 
-/*TOP BAR*/
+/*PROFILE PIC*/
+.profile_wrapper {
+	width: 400px;
+	height: 300px;
 
-.top_bar{
-	width: 800px;
-	height: 400px;
-	top: 20px;
-	right: 0;
-	position: relative;
-	margin: 0 auto;
+	position: absolute;
+	right:0;
 }
 
 .profile_pic {
 	width: 200px;
 	height: 200px;
+
 
 	background: url("../img/face1.png") center center;
   	background-size: 200px 200px;
@@ -101,9 +151,11 @@
   	transition: 0.3s cubic-bezier(1, -1, 0, 2);
 
 	position: absolute;
-	left: 50%;
-	top: 50%;
+	left: 0%;
 	margin-left: -100px;
+	top: 75%;
+	z-index: 20;
+
 }
 
 .profile_pic:hover {
@@ -115,7 +167,7 @@
 .bubble
 {
 width: 400px;
-height: 125px;
+height: 175px;
 padding: 0px;
 background: #FFFFFF;
 -webkit-border-radius: 10px;
@@ -124,6 +176,7 @@ border-radius: 10px;
 border: #7F7F7F solid 4px;
 
 position: absolute;
+top: 5%;
 left: 50%;
 margin-left: -200px;
 z-index: -1;
@@ -140,13 +193,7 @@ display: block;
 width: 0;
 z-index: 1;
 bottom: -15px;
-left: 110px;
-}
-
-.bubble p{
-	font-size: 3em;
-	font-weight: bold;
-	text-align: center;
+left: 70px;
 }
 
 /*SOCIAL MEDIA ICONS*/

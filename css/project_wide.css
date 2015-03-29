@@ -101,7 +101,7 @@
   height: 520px;
   cursor: pointer;
   margin: 20px;
-  border: 20px solid white;
+  border: 20px solid #7F7F7F;
 }
 
 
@@ -134,15 +134,15 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 3;
+  border: #7F7F7F solid 4px;
+
+  font-family: "amatic";
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 550;
+  color: #7F7F7F;
 }
 
-p {
-  text-align: center;
-  line-height: 10%;
-  font-size: 2em;
-  color: #6E6E6E;
-  font-weight: bold;
-}
 
 .projContainer:hover .projInfoContainer {
   top: 75%;

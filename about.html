@@ -22,13 +22,13 @@
 <body>
 <div class="content">
     <div class="headerbox">
-        <div class="bubble">    </div>
-        <div class="headertext">About Me</div>
+        <div class="headertext" id="default">About Me</div>
 
         <div class="flavortext">Where to go where to go</div>
+        <div class="instructiontext">Hover for navbar</div>
 
         <div class ="menu">
-            <div class="nav_element1"> <!-- Kind of a hack, we're tiling elements with relative positions to the previous div-->
+            <div class="nav_element1">
                 <a href="index.html">Home</a>
             </div>
             <div class="nav_element2">
@@ -38,39 +38,23 @@
               <a href="http://blog.justsophie.com/">Blog</a>
             </div>
         </div>
-        <div class="profile_pic"></div>
-</div>
-</div>
-<!-- <div class="top_bar">
-    <div class="profile_pic"></div>
-    <div class="bubble"><p>I'M SOPHIE!</p></div>
-</div>
-
-<div class="middle_banner">
-    <div class="arrow_home"><p>HOME</p></div><a href="index.html" class="home_box"></a>
-    <div class="arrow_projects"><p>PROJECTS</p></div><a href="projects.html" class="projects_box"></a>
-    <div class ="middle_banner_background"></div>
-</div>
+    </div>
 
 <div class="info_column">
     <div class="info_column1">
-    <p>
-        Hello there! <br />
-        This is Sophia Li, coder-extraordinair! (Please, call me Sophie.)<br />
-        I'm currently a Sophomore, studying Robotics at Olin College of Engineering. My interests are largely within the field of human-robot interactions.
-        To see some of the interesting things I've worked on, please take a look at the project catalogued <a href="projects.html">here</a>!<br />
+    <p> Hello there! <br />
+        This is Sophia Li, coder-extraordinair!<br /> (Please, call me Sophie.)<br />
+        I'm currently a Sophomore, studying Robotics at Olin College of Engineering. My interests are largely within the field of human-robot interactions. To see some of the interesting things I've worked on, please take a look at the projects catalogued <a href="projects.html">here</a>!<br />
         I also like to play video games and bake.
     </p>
+
+
     </div>
 
-    <div class="info_column2">
-    <p>
-        I recently...
-        Ran X miles X days ago<br />
-        Committed to X with the message X <br />
-        Baked X <br />
-    </p>
+    <div class="profile_wrapper">
+       <div class="bubble">    </div>
 
+       <div class="profile_pic"></div>
     </div>
 
     <div class="media_icons">
@@ -79,12 +63,25 @@
         <a href="http://instagram.com/penginee/"><div class="instagram_me"></div></a>
         <a href="www.linkedin.com/pub/sophia-li/7b/6b3/872"><div class="linkedin_me"></div></a>
     </div>
-
-    <div class="info_column_background">
-    </div>
-</div> -->
+</div>
+</div>
 <script type="text/javascript">
 $(document).ready(function(){
+    //profile pic
+
+    var hover_text = "^_^"
+    var default_text = $("#default").html();
+
+
+    $(".profile_pic").hover(function(){
+        $("#default").html(hover_text);
+        $(".profile_pic").css('background', 'url("img/face2.png") center center').css('background-size', '200px 200px');
+    }, function(){
+        $("#default").html(default_text);
+        $(".profile_pic").css('background', 'url("img/face1.png") center center').css('background-size', '200px 200px');
+
+    });
+
     //menu stuff
 
         var timeout = 0;
@@ -94,11 +91,11 @@ $(document).ready(function(){
     $('.menu').hide();
     $('.flavortext').hide();
 
-    $('.headertext')
+    $('.headertext, .instructiontext')
         .on("mouseenter", function () {
         hovering = true;
 
-        $('.headertext, .bubble')
+        $('.headertext, .instructiontext')
             .stop(true, true)
             .fadeOut(200);
 
@@ -135,7 +132,7 @@ $(document).ready(function(){
 
     function closeMenu(){
         if(!hovering){
-            $('.headertext, .bubble')
+            $('.headertext, .instructiontext')
                 .stop(true, true)
                 .fadeIn(400);
 
