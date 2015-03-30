@@ -52,13 +52,13 @@
             <a href="http://www.linkedin.com/pub/sophia-li/7b/6b3/872"><div class="linkedin_me"></div></a>
         </div>
        <div class="profile_pic"></div>
-       <div class="bubble_2"></div>
+       <div class="bubble_2"><div class="bubble_2_text" id="2default">I like pizza</div></div>
     </div>
 
     <div class="info_column1">
     <p> Hello there! <br />
         This is Sophia Li, coder-extraordinair!<br /> (Please, call me Sophie.)<br />
-        I'm currently a Sophomore, studying Robotics at Olin College of Engineering. My interests are largely within the field of human-robot interactions. To see some of the interesting things I've worked on, please take a look at the projects catalogued <a href="projects.html">here</a>!<br />
+        I'm currently a Sophomore, studying <a href="http://www.olin.edu/collaborate/robotics/">Robotics at Olin College of Engineering.</a> I'm fascinated with the field of human-robot-interactions, and love robots! To see some of the interesting things I've worked on, please take a look at the projects catalogued <a href="projects.html">here</a>!<br />
         I also like to play video games and bake.
     </p>
 
@@ -70,18 +70,44 @@
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
+    //quote switcher
+    var quotation = [];
+    quotation[0] = ['This is cool', 'url("img/faces/grin.png") center center'];
+    quotation[1] = ['I\'m bad with makeup', 'url("img/faces/makeup.png") center center'];
+    quotation[2] = ['Making people laugh is fun!', 'url("img/faces/smile.png") center center'];
+    quotation[3] = ['Potatoes are 80% water!', 'url("img/faces/wtf.png") center center'];
+    quotation[4] = ['Really hate mushrooms', 'url("img/faces/pout.png") center center'];
+
+    var switch_length = 4000;
+    var q_length = quotation.length;
+    var selected_quote;
+
+    selected_quote = Math.round(Math.random()*(q_length - 1));
+
+    // set interval
+    var tid = setTimeout(switch_face, switch_length);
+    function switch_face() {
+        selected_quote = Math.round(Math.random()*(q_length - 1));
+        $('#2default').html(quotation[selected_quote][0]);
+        $(".profile_pic").css('background', quotation[selected_quote][1]).css('background-size','200px 200px');
+        tid = setTimeout(switch_face, switch_length);
+    }
+    function abortTimer() { // to be called when you want to stop the timer
+      clearTimeout(tid);
+    }
+
     //profile pic
-    var hover_text = "ヾ(｡･ω･｡)"
+    var hover_text = "ヾ(｡･ω･｡)";
     var default_text = $("#default").html();
 
-    $(".bubble_2").hide();
-
     $(".profile_pic").hover(function(){
+        abortTimer();
         $("#default").html(hover_text);
-        $(".profile_pic").css('background', 'url("img/face2.png") center center'); //.css('background-size', '200px 200px');
+        $(".profile_pic").css('background', 'url("img/faces/face2.png") center center'); //.css('background-size', '200px 200px');
     }, function(){
+        tid = setTimeout(switch_face,switch_length);
         $("#default").html(default_text);
-        $(".profile_pic").css('background', 'url("img/face1.png") center center').css('background-size', '200px 200px');
+        $(".profile_pic").css('background', 'url("img/faces/face1.png") center center').css('background-size', '200px 200px');
 
     });
 
