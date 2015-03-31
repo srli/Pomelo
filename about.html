@@ -82,18 +82,30 @@ $(document).ready(function(){
     var q_length = quotation.length;
     var selected_quote;
 
+    var quotes = false;
     selected_quote = Math.round(Math.random()*(q_length - 1));
 
+    
+
+    if (quotes){
     // set interval
-    var tid = setTimeout(switch_face, switch_length);
+        $('.bubble_2').show();
+        var tid = setTimeout(switch_face, switch_length);
+    }
+    else if(!quotes){
+        $('.bubble_2').hide();
+        //clearTimeout(tid);
+    }
+
     function switch_face() {
         selected_quote = Math.round(Math.random()*(q_length - 1));
         $('#2default').html(quotation[selected_quote][0]);
         $(".profile_pic").css('background', quotation[selected_quote][1]).css('background-size','200px 200px');
         tid = setTimeout(switch_face, switch_length);
     }
+    
     function abortTimer() { // to be called when you want to stop the timer
-      clearTimeout(tid);
+        clearTimeout(tid);
     }
 
     //profile pic
@@ -101,6 +113,7 @@ $(document).ready(function(){
     var default_text = $("#default").html();
 
     $(".profile_pic").hover(function(){
+        quotes = !quotes;
         abortTimer();
         $("#default").html(hover_text);
         $(".profile_pic").css('background', 'url("img/faces/face2.png") center center'); //.css('background-size', '200px 200px');
