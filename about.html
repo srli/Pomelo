@@ -97,31 +97,49 @@ $(document).ready(function(){
 
     $('.bubble_2').hide();
 
-    function switch_face() {
+    function face_bounce() {
+        $('.profile_pic').effect("bounce", {times:3}, 300, face_bounce);
+    }
+
+    function quote_bubble_appear() {
+        $('.bubble, .media_icons').stop(true, true).fadeOut(500);
+        $('.bubble_2').stop(true, true).fadeIn(500);
         selected_quote = Math.round(Math.random()*(q_length - 1));
         $('#2default').html(quotation[selected_quote][0]);
-        $(".profile_pic").css('background', quotation[selected_quote][1]).css('background-size','200px 200px');
-        tid = setTimeout(switch_face, switch_length);
     }
 
-    function abortTimer() { // to be called when you want to stop the timer
-        clearTimeout(tid);
+    function quote_bubble_bye(){
+        $('.bubble_2').stop(true, true).fadeOut(500);
+        //$('.media_icons').stop(true, true).fadeIn(500);
+        $('.bubble, .media_icons').stop(true, true).fadeIn(500);
+
+        $(".profile_pic").css('background', 'url("img/faces/face1.png")').css('background-size', '200px 200px');
     }
 
-    //profile pic
+    function startbubbleTimeout() {
+        $('.media_icons').stop(true, true).fadeOut(500);
+        $('.bubble').stop(true, true).fadeOut(500);
+        $('.bubble_2').stop(true, true).fadeIn(500);
+
+        selected_quote = Math.round(Math.random()*(q_length - 1));
+        $(".profile_pic").css('background', quotation[selected_quote][1]).css('background-size', '200px 200px');
+        $('#2default').html(quotation[selected_quote][0]);
+
+        timeout = setTimeout(function() {quote_bubble_bye();}, 5000);
+
+    }
+
+     //profile pic
     var hover_text = "ヾ(｡･ω･｡)";
     var default_text = $("#default").html();
 
     $(".profile_pic").hover(function(){
-        $('.bubble_2').stop(true, true).fadeIn(500);
-        abortTimer();
         $("#default").html(hover_text);
         $(".profile_pic").css('background', 'url("img/faces/face2.png") center center'); //.css('background-size', '200px 200px');
-    }, function(){
-        tid = setTimeout(switch_face,switch_length);
-        $("#default").html(default_text);
-        $(".profile_pic").css('background', quotation[selected_quote][1]).css('background-size', '200px 200px');
 
+    }, function(){
+        startbubbleTimeout();
+        $("#default").html(default_text);
     });
 
     //menu stuff
