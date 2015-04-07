@@ -85,17 +85,17 @@ $(document).ready(function(){
     var quotes = false;
     selected_quote = Math.round(Math.random()*(q_length - 1));
 
-    
+
 
     if (quotes){
-    // set interval
-        $('.bubble_2').show();
         var tid = setTimeout(switch_face, switch_length);
     }
     else if(!quotes){
         $('.bubble_2').hide();
-        //clearTimeout(tid);
+        clearTimeout(tid);
     }
+
+    $('.bubble_2').hide();
 
     function switch_face() {
         selected_quote = Math.round(Math.random()*(q_length - 1));
@@ -103,7 +103,7 @@ $(document).ready(function(){
         $(".profile_pic").css('background', quotation[selected_quote][1]).css('background-size','200px 200px');
         tid = setTimeout(switch_face, switch_length);
     }
-    
+
     function abortTimer() { // to be called when you want to stop the timer
         clearTimeout(tid);
     }
@@ -113,14 +113,14 @@ $(document).ready(function(){
     var default_text = $("#default").html();
 
     $(".profile_pic").hover(function(){
-        quotes = !quotes;
+        $('.bubble_2').stop(true, true).fadeIn(500);
         abortTimer();
         $("#default").html(hover_text);
         $(".profile_pic").css('background', 'url("img/faces/face2.png") center center'); //.css('background-size', '200px 200px');
     }, function(){
         tid = setTimeout(switch_face,switch_length);
         $("#default").html(default_text);
-        $(".profile_pic").css('background', 'url("img/faces/face1.png") center center').css('background-size', '200px 200px');
+        $(".profile_pic").css('background', quotation[selected_quote][1]).css('background-size', '200px 200px');
 
     });
 
