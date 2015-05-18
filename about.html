@@ -78,7 +78,7 @@ $(document).ready(function(){
     quotation[3] = ['Potatoes are 80% water!', 'url("img/faces/wtf.png") center center'];
     quotation[4] = ['Really hate mushrooms', 'url("img/faces/pout.png") center center'];
 
-    var switch_length = 4000;
+    var switch_length = 3000;
     var q_length = quotation.length;
     var selected_quote;
 
@@ -89,11 +89,9 @@ $(document).ready(function(){
 
     if (quotes){
     // set interval
-        $('.bubble_2').show();
         var tid = setTimeout(switch_face, switch_length);
     }
     else if(!quotes){
-        $('.bubble_2').hide();
         //clearTimeout(tid);
     }
 
