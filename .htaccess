@@ -7,7 +7,7 @@ AuthGroupFile /dev/null
 AuthName "Please enter your ID and password"
 AuthType Basic
 require valid-user 
-order deny,allow
+ErrorDocument 404 err.txt
 
 Options +FollowSymLinks +Multiviews
 RewriteEngine On
@@ -16,3 +16,5 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
+
+order deny,allow
