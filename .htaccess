@@ -1,20 +1,14 @@
-<Files ~ "^\.(htaccess|htpasswd)$">
-deny from all
-</Files>
-Options Indexes
-AuthUserFile .htpasswd
-AuthGroupFile /dev/null
-AuthName "Please enter your ID and password"
-AuthType Basic
-require valid-user 
-ErrorDocument 404 err.txt
+Options -Indexes
+Options -MultiViews
+Options +FollowSymlinks
 
-Options +FollowSymLinks +Multiviews
-RewriteEngine On
-RewriteBase /
+RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ /$1.html [L]
 
-order deny,allow
+ErrorDocument 404 /err.txt
