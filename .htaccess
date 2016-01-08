@@ -9,11 +9,10 @@ AuthType Basic
 require valid-user 
 order deny,allow
 
+Options +FollowSymLinks +Multiviews
 RewriteEngine On
+RewriteBase /
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+)$ $1.html [L,QSA]
-
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
-RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+RewriteRule ^(.*)\.html$ /$1 [L,R=301] 
