@@ -2,8 +2,6 @@
 
 /*CONTENT*/
 .content{
-	height: 700px;
-	width: 1200px;
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
@@ -12,7 +10,7 @@
 
 
 /*HIGHLIGHT TEXT DIV*/
-.hometext {
+.hometext {	
 	position: absolute;
   	top: 50%;
   	left: 50%;
@@ -20,29 +18,48 @@
 	color: white;
 	font-family: "flower";
 	font-size: 6em;
-	width: auto;
+	text-align: center;
 }
 
 #titletext{
 	color: #5cd9fd;
 }
 
+.s_des_holder{
+	margin-top: -25px;
+	position: relative;
+	margin: 0 auto;
+	width: 500px;
+	height: 80px;
+	outline: black dotted thick;
+}
+
+.sophie_descriptor{
+	margin-top: -25px;
+	position: relative;
+	margin: 0 auto;
+	width: 700px;
+	height: 80px;
+
+	font-family: "flower";
+	text-align: center;
+	color: #CEF4FE;
+	font-size: 70%;
+}
+
+.name{
+	position: relative;
+	margin-bottom: 30px;
+}
+
 .flavortext{
 	position: absolute;
-	top: 525px;
+	top: 555px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
 	font-family: "flower";
 	font-size: 3em;
-}
-
-.sophie_descriptor{
-	margin-top: 22%;
-	margin-left: 700px;
-	font-family: "flower";
-	color: #CEF4FE;
-	font-size: 4em;
 }
 
 /*NAVIGATION DIVS*/

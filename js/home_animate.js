@@ -18,7 +18,8 @@ $(document).ready(function(){
 
     $('.menu').hide();
     $('.flavortext').hide();
-
+    $('.sophie_descriptor').hide();
+    
     $('#titletext')
         .on("mouseenter", function () {
         hovering = true;
