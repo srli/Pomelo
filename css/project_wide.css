@@ -1,10 +1,6 @@
-/*.content{
-  width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}*/
 
 .content{
+  width: 80%;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -37,66 +33,23 @@
     *zoom: 1;
 }
 
-.container{
-  border: black thick dotted;
-}
 
-/*.container {
+.container {
   width: 100%;
   position: relative;
 }
 
-.container > header {
-  width: 90%;
-  max-width: 1240px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0 30px 50px 30px;
-}
-
-.container > header {
-  padding: 60px 30px 50px;
-  text-align: center;
-}
-
-.container > header h1 {
-
-  font-size: 34px;
-  line-height: 38px;
-  margin: 0 auto;
-  font-weight: 700;
-  color: #333;
-}
-
-.container > header h1 span {
-  display: block;
-  font-size: 20px;
-  font-weight: 300;
-}*/
-
-/*.main > p {
-  text-align: center;
-  padding: 50px 20px;
-}*/
-
-
-
 /*HEADER CSS*/
 
 .headerbox{
-  width: 600px;
-  height: 100px;
-  position: absolute;
-/*  left: 50%
-  transform: translate(-50%, -50%);*/
-  top: 50px;
+  margin-top: 50px;
+  height: 150px;
+  position: relative;
   border: 1px hidden;
   text-align: center;
-  border: black thick dotted;
 }
 
 .headertext {
-
   font-family: "flower";
   font-weight: 500;
   font-size: 7em;
@@ -107,15 +60,12 @@
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*font-family: "flower";*/
   color: white;
-  /*font-size: 2em;*/
-  /*font-weight: 200;*/
   width: 200px;
 }
 
 .flavortext{
-  position: absolute;
+  padding-top: 35px;
   color: white;
   font-family: "flower";
   font-size: 3em;
