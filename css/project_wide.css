@@ -1,9 +1,15 @@
-.content{
+/*.content{
   width: 1200px;
   margin: 0 auto;
   text-align: center;
-}
+}*/
 
+.content{
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  cursor: default;
+}
 
 /*CODROPS CONTAINER CSS*/
 *,
@@ -31,20 +37,9 @@
     *zoom: 1;
 }
 
-/*body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
-    background: #f9f9f9;
-    font-weight: 300;
-    font-size: 15px;
-    color: #333;
-    overflow: scroll;
-    overflow-x: hidden;
+.container{
+  border: black thick dotted;
 }
-
-a {
-  color: #555;
-  text-decoration: none;
-}*/
 
 /*.container {
   width: 100%;
@@ -65,7 +60,7 @@ a {
 }
 
 .container > header h1 {
-  
+
   font-size: 34px;
   line-height: 38px;
   margin: 0 auto;
@@ -89,18 +84,19 @@ a {
 /*HEADER CSS*/
 
 .headerbox{
-  width: 1200px;
-  height: 300px;
+  width: 600px;
+  height: 100px;
   position: absolute;
-  left: 50%
-  transform: translate(-50%, -50%);
+/*  left: 50%
+  transform: translate(-50%, -50%);*/
   top: 50px;
   border: 1px hidden;
+  text-align: center;
+  border: black thick dotted;
 }
 
 .headertext {
-  margin-left: auto;
-  margin-right: auto;
+
   font-family: "flower";
   font-weight: 500;
   font-size: 7em;
@@ -120,9 +116,6 @@ a {
 
 .flavortext{
   position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
   font-family: "flower";
   font-size: 3em;
