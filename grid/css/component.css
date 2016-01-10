@@ -1,6 +1,6 @@
 .og-grid {
 	list-style: none;
-	padding: 20px 0;
+	padding: 10px 0;
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
@@ -8,7 +8,7 @@
 
 .og-grid li {
 	display: inline-block;
-	margin: 10px 5px 0 5px;
+	margin: 25px 25px 0 5px;
 	vertical-align: top;
 	height: 250px;
 }
