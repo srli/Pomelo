@@ -6,8 +6,21 @@
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	cursor: default;
-	    background-color:rgba(0,0,0, 0.5);
 
+}
+
+/*PAGE1*/
+.page1{
+	width: 100%;
+	height: 100vh;
+	background-color:rgba(0,0,0, 0.5);
+}
+
+/*PAGE2*/
+.page2{
+	width: 100%;
+	height: 500px;
+	background-color: white;
 }
 
 /*DOWN ARROW ANIMATION*/
