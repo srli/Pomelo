@@ -4,6 +4,8 @@
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+    background-color:rgba(0,0,0, 0.5);
+
   cursor: default;
 }
 
@@ -16,7 +18,6 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-color:rgba(226, 226, 226, 0.2);
 }
 
 
@@ -93,10 +94,11 @@
 }
 
 .menu2{
+  padding-top: 20px;
   width: 100%;
   color: white;
   font-family: "flower";
-  font-size: 3.5em;
+  font-size: 3em;
 }
 
 .nav_element4 {
@@ -106,14 +108,12 @@
 }
 
 .nav_element5 {
-
   text-align: center;
   width: 33%;
   float: left;
 }
 
 .nav_element6 {
-
   text-align: right;
   width: 33%;
   float: left;

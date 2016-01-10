@@ -1,1 +1,36 @@
-err err err
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style media="all">
+body { background: #30353b; }
+div {
+	width: 400px;
+	height: 200px;
+	background: white;
+	position: relative;
+	border:1px solid red
+}
+div:after, div:before {
+	content: "";
+	width:0px;
+	height:0px;
+	border-left:12px solid transparent;
+	border-right:12px solid transparent;
+	border-top:12px solid #fff;
+	position:absolute;
+	bottom:-12px;
+	left: 50%;
+	margin-left: -12px;
+	z-index:2;
+}
+div:before {
+	z-index:1;
+	border-top:12px solid red;
+	bottom:-13px;
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
