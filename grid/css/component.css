@@ -109,8 +109,9 @@
 }
 
 .og-details h3 {
+	font-family: "flower";
 	font-weight: 300;
-	font-size: 52px;
+	font-size: 5em;
 	padding: 40px 0 10px;
 	margin-bottom: 10px;
 }

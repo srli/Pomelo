@@ -17,6 +17,7 @@
   	transform: translate(-50%, -50%);
 	color: white;
 	font-family: "flower";
+	font-weight: 600;
 	font-size: 6em;
 	text-align: center;
 }
@@ -43,6 +44,7 @@
 
 	font-family: "flower";
 	text-align: center;
+	font-weight: normal;
 	color: #CEF4FE;
 	font-size: 70%;
 }

@@ -2,9 +2,9 @@ $(document).ready(function(){
     //SOPHIE DESCRIPTORS
     var quotation = new Array();
     quotation[0] = "PROGRAMMER EXTRAORDINAIRE";
-    quotation[1] = "FABULOUS SINGER";
-    quotation[2] = "PRETTY AVERAGE ARTIST";
-    quotation[3] = "ASTRONOMER IN TRAINING";
+    quotation[1] = "FABULOUS MUSICIAN";
+    quotation[2] = "PYTHON SAVVY";
+    quotation[3] = "ROBOT LOVING";
     quotation[4] = "EXCITED ENGINEER";
     quotation[5] = "BOMBASTIC BAKER"
 
@@ -19,7 +19,13 @@ $(document).ready(function(){
     $('.menu').hide();
     $('.flavortext').hide();
     $('.sophie_descriptor').hide();
-    
+
+    // selected_quote = Math.round(Math.random()*(q_length - 1));
+    // $(".sophie_descriptor")
+    //         .stop(true,true)
+    //         .fadeIn(500)
+    //         .html(quotation[selected_quote]);
+
     $('#titletext')
         .on("mouseenter", function () {
         hovering = true;
