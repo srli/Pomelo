@@ -29,6 +29,8 @@ Have a great day!
 <div class="content">
 <div class="container">
 </br>
+    Sophia Li. Roboticist. </br>
+    </br>
 <!-- <div class="writer">Sophia Li. Roboticist.</div>
  --><div class="text">> &nbsp;</div>
 <div class="writer">./menu</div>
@@ -48,46 +50,36 @@ Have a great day!
 <div class="text">> &nbsp;</div>
 </div>
 
+<div class="cursor">|</div>
 
 </div>
 </div>
 
 <script type="text/javascript">
+var captionLength = 0;
+var caption = '';
+
 $(document).ready(function(){
-
-    setInterval('cursorAnimate()',600);
-
-    //$('.cursor').hide();
     $('.menu').hide();
+
+    setInterval('cursorAnimate()', 700);
+    captionEl = $('.writer');
+    caption = captionEl.html();
+
+    type();
 
 });
 
-// tipewriter by roXon //
-var $el = $('.writer'),
-    txt = $el.text(),
-    txtLen = txt.length,
-    timeOut,
-    char = 0;
-
-$el.text('|');
-
-(function typeIt() {   
-    var humanize = Math.round(Math.random() * (200 - 30)) + 30;
-    timeOut = setTimeout(function() {
-        char++;
-        var type = txt.substring(0, char);
-        $el.text(type + '|');
-        typeIt();
-
-        if (char == txtLen) {
-            $el.text($el.text().slice(0, -1)); // remove the '|'
-            clearTimeout(timeOut);
-            setTimeout('$(".menu").show()', 500);
-        }
-
-    }, humanize);
-    
-}())
+function type() {
+    captionEl.html(caption.substr(0, captionLength++));
+    if(captionLength < caption.length+1) {
+        setTimeout('type()', Math.floor(Math.random() * 100) + 60 );
+    } else {
+        captionLength = 0;
+        caption = '';
+        setTimeout("$('.menu').show()", 500);
+    }
+}
 
 function cursorAnimate(){
 $('.cursor').animate({
