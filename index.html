@@ -28,8 +28,10 @@ Have a great day!
 <body>
 <div class="content">
 <div class="container">
-<div class="text">> &nbsp;</div>
-<div class="writer">./initialize</div>
+</br>
+<!-- <div class="writer">Sophia Li. Roboticist.</div>
+ --><div class="text">> &nbsp;</div>
+<div class="writer">./menu</div>
 <div class="menu">
     </br>
     </br>
@@ -42,7 +44,10 @@ Have a great day!
           <li><a href="about.html">About</a></li>
           <li><a href="http://blog.justsophie.com">Blog</a></li>
         </ol>
+    </br>
+<div class="text">> &nbsp;</div>
 </div>
+
 
 </div>
 </div>
@@ -50,35 +55,48 @@ Have a great day!
 <script type="text/javascript">
 $(document).ready(function(){
 
+    setInterval('cursorAnimate()',600);
+
+    //$('.cursor').hide();
     $('.menu').hide();
 
-    // tipewriter by roXon //
-    var $el = $('.writer'),
-        txt = $el.text(),
-        txtLen = txt.length,
-        timeOut,
-        char = 0;
-
-    $el.text('|');
-
-    (function typeIt() {   
-        var humanize = Math.round(Math.random() * (200 - 30)) + 30;
-        timeOut = setTimeout(function() {
-            char++;
-            var type = txt.substring(0, char);
-            $el.text(type + '|');
-            typeIt();
-
-            if (char == txtLen) {
-                $el.text($el.text().slice(0, -1)); // remove the '|'
-                clearTimeout(timeOut);
-                setTimeout('$(".menu").show()', 500);
-            }
-
-        }, humanize);
-        
-    }());
 });
+
+// tipewriter by roXon //
+var $el = $('.writer'),
+    txt = $el.text(),
+    txtLen = txt.length,
+    timeOut,
+    char = 0;
+
+$el.text('|');
+
+(function typeIt() {   
+    var humanize = Math.round(Math.random() * (200 - 30)) + 30;
+    timeOut = setTimeout(function() {
+        char++;
+        var type = txt.substring(0, char);
+        $el.text(type + '|');
+        typeIt();
+
+        if (char == txtLen) {
+            $el.text($el.text().slice(0, -1)); // remove the '|'
+            clearTimeout(timeOut);
+            setTimeout('$(".menu").show()', 500);
+        }
+
+    }, humanize);
+    
+}())
+
+function cursorAnimate(){
+$('.cursor').animate({
+    opacity: 0
+}, 'fast', 'swing').animate({
+    opacity: 1
+}, 'fast', 'swing');
+}
+
 
 </script>
 </body>
