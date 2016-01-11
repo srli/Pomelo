@@ -17,9 +17,27 @@
 }
 
 .text{
+	width: auto;
 	float: left;
 }
 
 .writer{
 	float:left;
+}
+
+.m_desc{
+	width: 100%;
+	float: left;
+}
+
+.m_spacer{
+	float: left;
+}
+
+.cursor{
+	float:left;
+}
+
+.menu{
+	width: 400px;
 }
