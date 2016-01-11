@@ -1,0 +1,106 @@
+/*CURRENT CUSTOM CSS*/
+
+body {
+	margin: 0 0 0 0 !important;
+	padding: 0;
+	background-image: url("../img/backgrounds/bright_squares_@2X.png");
+	font-family: "opensans";
+}
+
+
+/*NAV BAR*/
+
+.nav {
+	padding: 5px 0;
+	background-color: white;
+	position: -webkit-sticky;
+	top: 45px;
+	z-index: 1;
+	text-align: center;
+	color: #000;
+	height: 45px;
+}
+
+.nav table{
+	font-family: "soon";
+	font-size: 150%;
+	margin: 0 auto;
+	margin-top: -35px;
+	border-spacing: 40px;
+}
+
+.nav td:hover{
+	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+	font-weight: bold;
+}
+
+.sticky {
+	position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+    background-color: slategray;
+    color: #fff;
+}
+
+
+
+/*DEFINING GLOBAL LINK DEFINITIONS*/
+/*Default set to inherit from parent div, TO-DO: Set defaults*/
+
+a:link {
+	text-decoration: none;
+    color: #5cd9fd;
+
+}
+
+a:visited {
+	text-decoration: none;
+    color: #5cd9fd;
+}
+
+a:hover {
+	text-decoration: none;
+    color: #AEECFE;
+}
+
+a:active {
+	text-decoration: none;
+    color: #5cd9fd;
+}
+
+
+/*DEFINING CUSTOM FONTS*/
+
+@font-face{
+	font-family: "bizon";
+	src: url('../fonts/bizon.otf') format('opentype');
+}
+
+@font-face{
+	font-family: "opensans";
+	src: url('../fonts/opensans.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: "flower";
+	src: url('../fonts/flower.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: "poiret";
+	src: url('../fonts/poiret.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: "soon";
+	src: url('../fonts/soon.ttf') format('truetype');
+}
+
+@font-face{
+	font-family: "amatic";
+	src: url('../fonts/amatic.ttf') format('truetype');
+}

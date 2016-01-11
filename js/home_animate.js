@@ -19,6 +19,12 @@ $(document).ready(function(){
     $('.menu').hide();
     $('.flavortext').hide();
     $('.sophie_descriptor').hide();
+    $('.arrow').hide();
+    $('.helpertext').hide();
+
+    setTimeout('$(".arrow").fadeIn(200)', 1000); // 5 second delay on the fade in
+    setTimeout('$(".helpertext").fadeIn(200)', 5000); // 5 second delay on the fade in
+
 
     // selected_quote = Math.round(Math.random()*(q_length - 1));
     // $(".sophie_descriptor")
@@ -26,10 +32,23 @@ $(document).ready(function(){
     //         .fadeIn(500)
     //         .html(quotation[selected_quote]);
 
+    $(window).scroll(function() {
+        if ($(this).scrollTop()>0){
+            $('.arrow').fadeOut();
+         }
+        else{
+          $('.arrow').fadeIn();
+         }
+    });
+
     $('#titletext')
         .on("mouseenter", function () {
         hovering = true;
         selected_quote = Math.round(Math.random()*(q_length - 1));
+
+        $('.helpertext')
+            .stop(true, true)
+            .hide();
 
         $(".sophie_descriptor")
             .stop(true,true)
@@ -68,7 +87,7 @@ $(document).ready(function(){
 
     function closeMenu(){
         if(!hovering){
-            $(".menu, .flavortext")
+            $(".menu, .flavortext, .helpertext")
                 .stop(true, true)
                 .fadeOut(400);
 

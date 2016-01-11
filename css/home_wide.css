@@ -12,7 +12,7 @@
 /*PAGE1*/
 .page1{
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 	background-color:rgba(0,0,0, 0.5);
 }
 
@@ -20,7 +20,8 @@
 .page2{
 	width: 100%;
 	height: 500px;
-	background-color: white;
+	background-color:rgba(0,0,255, 0.2);
+	font-family: "opensans"
 }
 
 /*DOWN ARROW ANIMATION*/
@@ -75,7 +76,7 @@
 
 .arrow {
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   margin-left: -20px;
   width: 40px;
@@ -93,10 +94,11 @@
 
 /*HIGHLIGHT TEXT DIV*/
 .hometext {	
-	position: absolute;
+	width: 100%;
+/*	position: absolute;
   	top: 50%;
   	left: 50%;
-  	transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);*/
 	color: white;
 	font-family: "flower";
 	font-size: 6em;
@@ -132,8 +134,15 @@
 
 .name{
 	position: relative;
+}
+
+.helpertext{
+	font-family: "opensans";
+	font-size: 15%;
+	position: relative;
 	margin-bottom: 30px;
 }
+
 
 .flavortext{
 	position: absolute;

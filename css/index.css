@@ -1,0 +1,25 @@
+/*CONTENT*/
+.content{
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	cursor: default;
+	color: white;
+	background-color:rgba(0,0,0, 0.7);
+}
+
+.container{		
+	width: 80%;
+	position: absolute;
+	margin: auto;
+	top: 0; left: 0; bottom: 0; right: 0;
+	margin-top: 150px;
+}
+
+.text{
+	float: left;
+}
+
+.writer{
+	float:left;
+}
