@@ -40,8 +40,8 @@ Have a great day!
     </br>
     Hello.</br>
     Where would you like to go next?</br>
-        <ol>
-          <li><a href="projects.html">Portfolio</a></li>
+        <ol style="width: 200px;">
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html">About</a></li>
@@ -69,11 +69,11 @@ menu_name[3] = "About"
 menu_name[4] = "Blog"
 
 var menu_desc = new Array();
-menu_desc[0] = "Portfolio blah</br></br>"
-menu_desc[1] = "Resume blah</br></br>"
-menu_desc[2] = "contact blah</br></br>"
-menu_desc[3] = "about blah</br></br>"
-menu_desc[4] = "blog blah</br></br>"
+menu_desc[0] = "A collection of past projects.</br>Links to a list of currenly documented projects</br></br>"
+menu_desc[1] = "Links to an online copy of my resume</br></br>"
+menu_desc[2] = "contact info</br></br>"
+menu_desc[3] = "I'm a budding roboticist</br></br>"
+menu_desc[4] = "Clicking forwards to my external blog.</br></br>"
 
 $(document).ready(function(){
     $('.menu').hide();
@@ -84,12 +84,13 @@ $(document).ready(function(){
     setInterval('cursorAnimate()', 800);
     captionEl = $('.writer');
     caption = captionEl.html();
+    captionEl.html('');
 
-    type();
+    setTimeout('type()', 1500);
 
     $(".menu li").hover(function(){
         $(this).addClass("hover");
-        $('.m_name').html($(this).index()).show();
+        $('.m_name').html(menu_name[$(this).index()]).show();
         $('.m_desc').html(menu_desc[$(this).index()]).show();
         $('.m_spacer').show();
     }, function(){
@@ -106,16 +107,16 @@ function type() {
     } else {
         captionLength = 0;
         caption = '';
-        setTimeout("$('.menu').show()", 500);
+        setTimeout("$('.menu').show()", 1000);
     }
 }
 
 function cursorAnimate(){
 $('.cursor').animate({
     opacity: 0
-}, 'fast', 'swing').animate({
+}, 'medium', 'swing').animate({
     opacity: 1
-}, 'fast', 'swing');
+}, 'medium', 'swing');
 }
 
 

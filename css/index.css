@@ -5,6 +5,7 @@
 	top: 0; left: 0; bottom: 0; right: 0;
 	cursor: default;
 	color: white;
+	/*background-color: #99FFFF;*/
 	background-color:rgba(0,0,0, 1);
 }
 
@@ -13,7 +14,7 @@
 	position: absolute;
 	margin: auto;
 	top: 0; left: 0; bottom: 0; right: 0;
-	margin-top: 150px;
+	margin-top: 120px;
 }
 
 .text{
