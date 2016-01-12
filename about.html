@@ -56,8 +56,7 @@
     </div>
 
     <div class="text">> &nbsp;</div>
-    <div class="writer">./random_fact</div>
-    <div class="m_name"></div>
+    <div class="writer">./did_you_know</div>
     <div class="m_desc"></div>
     <div class="m_spacer">>&nbsp;</div>
     <div class="cursor">|</div>
@@ -66,21 +65,55 @@
 </div>
 
 <script type="text/javascript">
-    $(document).ready(function(){
+$('.m_desc').hide();
+$('.m_spacer').hide();
 
+var captionLength = 0;
+var caption = '';
+var fact = new Array();
+fact[0] = "Sea otters hold hands so they don't drift apart while sleeping.</br></br>"
+fact[1] = "Owls are the only birds who can see the color blue.</br></br>"
+fact[2] = "Banana trees aren't actually trees--they're giant herbs.</br></br>"
+fact[3] = "Venus is the only planet that rotates clockwise.</br></br>"
+fact[4] = "Pandas don't have specific sleeping spots--they fall asleep wherever they happen to be.</br></br>"
+fact[5] = "A pigeon is a dove, but a dove isn't necessarily a pigeon.</br></br>"
+fact[6] = "The earth moves just over 1000 miles per hour around the sun. </br></br>"
 
-        setInterval('cursorAnimate()', 800);
+$(document).ready(function(){
 
+    setInterval('cursorAnimate()', 800);
+    captionEl = $('.writer');
+    caption = captionEl.html();
+    captionEl.html('');
 
-    });
+    setTimeout('type()', 10000);
 
-    function cursorAnimate(){
-    $('.cursor').animate({
-        opacity: 0
-    }, 'medium', 'swing').animate({
-        opacity: 1
-    }, 'medium', 'swing');
+});
+
+function type() {
+    captionEl.html(caption.substr(0, captionLength++));
+    if(captionLength < caption.length+1) {
+        setTimeout('type()', Math.floor(Math.random() * 100) + 60 );
+    } else {
+        captionLength = 0;
+        caption = '';
+        setTimeout("factShow()", 1000);
+        setInterval("factShow()", 8000);
     }
+}
+
+function factShow(){
+    $('.m_desc').html(fact[Math.floor(Math.random() * fact.length)]).show();
+    $('.m_spacer').show();
+}
+
+function cursorAnimate(){
+$('.cursor').animate({
+    opacity: 0
+}, 'medium', 'swing').animate({
+    opacity: 1
+}, 'medium', 'swing');
+}
 
 </script>
 </body>
