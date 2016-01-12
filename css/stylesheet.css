@@ -3,11 +3,11 @@
 body {
 	margin: 0 0 0 0 !important;
 	padding: 0;
-	background-image: url("../img/backgrounds/bright_squares_@2X.png");
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
-	background-color:rgba(0,0,0, 0.7);
-
-}
+	background-color: black;
+/*	background-image: url("../img/backgrounds/bright_squares_@2X.png");
+*/	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+/*	background-color:rgba(0,0,0, 0.7);
+*/}
 
 h1{
 	font-weight: normal;
