@@ -37,21 +37,21 @@
     <h1>Portfolio</h1>
 
     <div class="text">> &nbsp;</div>
-    <div class="writer">./portfolio_list</div>
+    <div class="writer">./list</div>
     <div class="menu">
         </br>
         </br>
         Listed in order of recency. 1 = newest. </br>
-        What would you like to see?</br>
+        Click for more information.</br>
         <ol style="width: 500px;">
             <li><a href="edwin.html">Edwin: tic-tac-toe with a robotic dinosaur</a></li>
             <li><a href="pseudos.html">PseudOS: baremetal Raspberry Pi OS</a></li>
             <li><a href="pendulum.html">N-case compound pendulum simulator</a></li>
-            <li><a href="poe.html">A Desktop Companion</a></li>
+            <li><a href="poe.html">Kinetic sculpture + desktop companion</a></li>
             <li><a href="walle.html">WALL-E: human robot interactions with Kinect API </a></li>
             <li><a href="underwater.html">Underwater structured light localization</a></li>
             <li><a href="jimmy.html">Jimmy: 3D printed humanoid robot</a></li>
-            <li><a href="genecar.html">Teaching cars to drive genetic algorithms</a></li>
+            <li><a href="genecar.html">Teaching cars to drive with genetic algorithms</a></li>
         </ol>
         </br>
     <div class="text">> &nbsp;</div>
@@ -68,18 +68,24 @@
     var captionLength = 0;
     var caption = '';
     var menu_name = new Array();
-    menu_name[0] = "Portfolio"
-    menu_name[1] = "Resume"
-    menu_name[2] = "Contact"
-    menu_name[3] = "About"
-    menu_name[4] = "Blog"
+    menu_name[0] = "edwin"
+    menu_name[1] = "pseudOS"
+    menu_name[2] = "pendulum"
+    menu_name[3] = "desktop_companion"
+    menu_name[4] = "wall-e"
+    menu_name[5] = "underwater_vision"
+    menu_name[6] = "jimmy"
+    menu_name[7] = "genetic_car"
 
     var menu_desc = new Array();
-    menu_desc[0] = "<img src='img/cake.jpg'></br></br>"
-    menu_desc[1] = "Links to an online copy of my resume</br></br>"
-    menu_desc[2] = "contact info</br></br>"
-    menu_desc[3] = "I'm a budding roboticist</br></br>"
-    menu_desc[4] = "Clicking forwards to my external blog.</br></br>"
+    menu_desc[0] = "<img src='img/edwin.jpg' height='200px'></br>By custom printing a 'hand' for a robotic arm, we were able to create a robotic dinosaur. Using computer vision, Edwin can play tic-tac-toe in a natural manner.</br></br>"
+    menu_desc[1] = "<img src='img/pseudOS.jpg' height='200px'></br>This is a baremetal operating system written for the RaspPi2 that includes interrupt driven UART and a calculator program.</br></br>"
+    menu_desc[2] = "<img src='img/npen_pva.jpg' height='200px'></br>By generalizing the equations of motion for compound pendulums, this script generates the Matlab code to simulate an n-case compound pendulum.</br></br>"
+    menu_desc[3] = "<img src='img/companion.jpg' height='200px'></br>This little guy is a kinetic sculpture that has a pre-programmed idle motion and responses to various external stimuli like light intensity and presence of people.</br></br>"
+    menu_desc[4] = "<img src='img/walle.png' height='200px'> </br> Our WALL-E replica follows people around using an IR sensor. He also responds to hand gestures via a kinect mounted in his chest.</br></br>"
+    menu_desc[5] = "<img src='img/underwater.jpg' height='200px'></br>OpenCV used in conjuction with a green horizontal laser allows determination of bearing and distance of underwater objects</br></br>"
+    menu_desc[6] = "<img src='img/jimmy.jpg' height='200px'></br>Jimmy is a humanoid robot that acheives humanlike interaction through elements including face tracking and voice recognition.</br></br>"
+    menu_desc[7] = "<img src='img/genCarUI.png' height='200px'></br> Using PyGame, this program in simulates cars learning how to drive around a circular track using genetic algorithms.</br></br>"
 
     $(document).ready(function(){
         $('.menu').hide();
@@ -92,7 +98,7 @@
         caption = captionEl.html();
         captionEl.html('');
 
-        setTimeout('type()', 1500);
+        setTimeout('type()', 500);
 
         $(".menu li").hover(function(){
             $(this).addClass("hover");
