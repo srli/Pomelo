@@ -29,6 +29,19 @@ table.navtable td{
 }
 
 
+.text{
+	width: auto;
+	float: left;
+}
+
+.text_holder{
+	max-width: 600px;
+}
+
+.cursor{
+	float:left;
+}
+
 .m_desc{
 	width: 100%;
 	float: left;
@@ -38,20 +51,6 @@ table.navtable td{
 	float: left;
 }
 
-
-.text{
-	width: auto;
-	float: left;
-}
-
 .writer{
 	float:left;
-}
-
-.cursor{
-	float:left;
-}
-
-.menu{
-	width: 400px;
 }

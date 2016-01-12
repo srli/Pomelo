@@ -27,65 +27,63 @@ Have a great day!
 <body>
 <div class="content">
 <div class="container">
-</br>
-    Sophia Li. Roboticist. </br>
-    hello@justsophie.com</br>
     </br>
-<!-- <div class="writer">Sophia Li. Roboticist.</div>
- --><div class="text">> &nbsp;</div>
-<div class="writer">./menu</div>
-<div class="menu">
-    </br>
-    </br>
-    Hello.</br>
-    Where would you like to go next?</br>
-        <ol style="width: 200px;">
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="http://blog.justsophie.com">Blog</a></li>
-        </ol>
-    </br>
-<div class="text">> &nbsp;</div>
-</div>
-<div class="m_name"></div>
-<div class="m_desc"></div>
-<div class="m_spacer">>&nbsp;</div>
-<div class="cursor">|</div>
-
+    Sophia Li. Roboticist. </br></br>
+    > &nbsp; say hello at: hello@justsophie.com</br>
+    <div class="text">> &nbsp;</div>
+    <div class="writer">./menu</div>
+    <div class="menu">
+        </br>
+        </br>
+        Hi there!</br>
+        Where would you like to go next?</br>
+            <ol style="width: 100px;">
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="http://blog.justsophie.com">Blog</a></li>
+            </ol>
+        </br>
+    <div class="text">> &nbsp;</div>
+    </div>
+    <div class="m_name"></div>
+    <div class="m_desc"></div>
+    <div class="m_spacer">>&nbsp;</div>
+    <div class="cursor">|</div>
 </div>
 </div>
 
 <script type="text/javascript">
+$('.menu').hide();
+$('.m_name').hide();
+$('.m_desc').hide();
+$('.m_spacer').hide();
+
 var captionLength = 0;
 var caption = '';
 var menu_name = new Array();
 menu_name[0] = "portfolio"
 menu_name[1] = "resume"
-menu_name[2] = "contact"
-menu_name[3] = "about"
+menu_name[2] = "about"
+menu_name[3] = "contact"
 menu_name[4] = "blog"
 
 var menu_desc = new Array();
-menu_desc[0] = "A collection of past projects.</br>Links to a list of currenly documented projects</br></br>"
+menu_desc[0] = "Links to a list of currenly documented projects</br></br>"
 menu_desc[1] = "Links to an online copy of my resume</br></br>"
-menu_desc[2] = "contact info</br></br>"
-menu_desc[3] = "I'm a budding roboticist</br></br>"
-menu_desc[4] = "Clicking forwards to my external blog.</br></br>"
+menu_desc[2] = "Links to about me page for more information</br></br>"
+menu_desc[3] = "<a href='https://github.com/srli'>Github</a>&nbsp;&nbsp;<a href='https://www.linkedin.com/in/sophia-li-8726b37b'>LinkedIn</a></br>Links to contact form as well as additional contact information</br>"
+menu_desc[4] = "Forwards to my external blog.</br></br>"
 
 $(document).ready(function(){
-    $('.menu').hide();
-    $('.m_name').hide();
-    $('.m_desc').hide();
-    $('.m_spacer').hide();
 
     setInterval('cursorAnimate()', 800);
     captionEl = $('.writer');
     caption = captionEl.html();
     captionEl.html('');
 
-    setTimeout('type()', 1500);
+    setTimeout('type()', 500);
 
     $(".menu li").hover(function(){
         $(this).addClass("hover");
@@ -95,7 +93,6 @@ $(document).ready(function(){
     }, function(){
         $(this).removeClass("hover");
     });
-
 
 });
 
@@ -117,9 +114,6 @@ $('.cursor').animate({
     opacity: 1
 }, 'medium', 'swing');
 }
-
-
-
 
 </script>
 </body>

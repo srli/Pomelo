@@ -4,9 +4,7 @@
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	cursor: default;
-	color: white;
-	/*background-color: #99FFFF;*/
-	background-color:rgba(0,0,0, 1);
+	color: 	#E0E0E0;
 }
 
 
