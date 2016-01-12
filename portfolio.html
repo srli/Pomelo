@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Portfolio
+    </title>
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel='stylesheet' href='css/stylesheet.css'  type="text/css"/>
+
+    <link rel='stylesheet' media='screen and (max-width: 480px)' href='css/content_narrow.css' type="text/css"/> <!-- Phone -->
+    <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 700px)' href='css/content_medium.css' type="text/css"/> <!-- Tablet -->
+    <link rel='stylesheet' media='screen and (min-width: 701px)' href='css/portfolio.css' type="text/css"/> <!-- Desktop -->
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+
+</head>
+
+<body>
+<div class="content">
+<div class="container">
+    <div class="navbar">
+        <table class="navtable">
+          <tr>
+            <td>Home</td>
+            <td>Resume</td>
+            <td>Contact</td>
+            <td>About</td>
+            <td>Blog</td>
+          </tr>
+        </table>
+    </div>
+
+    </br>
+    
+    <h1>Portfolio</h1>
+
+    <div class="text">> &nbsp;</div>
+    <div class="writer">./portfolio_list</div>
+    <div class="menu">
+        </br>
+        </br>
+        Listed in order of recency. 1 = newest. </br>
+        What would you like to see?</br>
+        <ol style="width: 500px;">
+            <li><a href="edwin.html">Edwin: tic-tac-toe with a robotic dinosaur</a></li>
+            <li><a href="pseudos.html">PseudOS: baremetal Raspberry Pi OS</a></li>
+            <li><a href="pendulum.html">N-case compound pendulum simulator</a></li>
+            <li><a href="poe.html">Kinectic sculpture + Desktop companion</a></li>
+            <li><a href="walle.html">WALL-E: human robot interactions with Kinect API </a></li>
+            <li><a href="underwater.html">Underwater structured light localization</a></li>
+            <li><a href="jimmy.html">Jimmy: 3D printed humanoid robot</a></li>
+            <li><a href="genecar.html">Teaching cars to drive genetic algorithms</a></li>
+        </ol>
+        </br>
+    <div class="text">> &nbsp;</div>
+    </div>
+    <div class="m_name"></div>
+    <div class="m_desc"></div>
+    <div class="m_spacer">>&nbsp;</div>
+    <div class="cursor">|</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    var captionLength = 0;
+    var caption = '';
+    var menu_name = new Array();
+    menu_name[0] = "Portfolio"
+    menu_name[1] = "Resume"
+    menu_name[2] = "Contact"
+    menu_name[3] = "About"
+    menu_name[4] = "Blog"
+
+    var menu_desc = new Array();
+    menu_desc[0] = "A collection of past projects.</br>Links to a list of currenly documented projects</br></br>"
+    menu_desc[1] = "Links to an online copy of my resume</br></br>"
+    menu_desc[2] = "contact info</br></br>"
+    menu_desc[3] = "I'm a budding roboticist</br></br>"
+    menu_desc[4] = "Clicking forwards to my external blog.</br></br>"
+
+    $(document).ready(function(){
+        $('.menu').hide();
+        $('.m_name').hide();
+        $('.m_desc').hide();
+        $('.m_spacer').hide();
+
+        setInterval('cursorAnimate()', 800);
+        captionEl = $('.writer');
+        caption = captionEl.html();
+        captionEl.html('');
+
+        setTimeout('type()', 1500);
+
+        $(".menu li").hover(function(){
+            $(this).addClass("hover");
+            $('.m_name').html(menu_name[$(this).index()]).show();
+            $('.m_desc').html(menu_desc[$(this).index()]).show();
+            $('.m_spacer').show();
+        }, function(){
+            $(this).removeClass("hover");
+        });
+
+
+    });
+
+    function type() {
+        captionEl.html(caption.substr(0, captionLength++));
+        if(captionLength < caption.length+1) {
+            setTimeout('type()', Math.floor(Math.random() * 100) + 60 );
+        } else {
+            captionLength = 0;
+            caption = '';
+            setTimeout("$('.menu').show()", 1000);
+        }
+    }
+
+    function cursorAnimate(){
+    $('.cursor').animate({
+        opacity: 0
+    }, 'medium', 'swing').animate({
+        opacity: 1
+    }, 'medium', 'swing');
+    }
+
+</script>
+</body>
+</html>

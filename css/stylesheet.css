@@ -9,7 +9,10 @@ body {
 
 }
 
-
+h1{
+	font-weight: normal;
+	font-size: 2em;
+}
 
 /*DEFINING GLOBAL LINK DEFINITIONS*/
 /*Default set to inherit from parent div, TO-DO: Set defaults*/
