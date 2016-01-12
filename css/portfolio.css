@@ -25,7 +25,7 @@ table.navtable{
 }
 
 table.navtable td{
-	width: 100px;
+	padding-right: 40px; 
 }
 
 
