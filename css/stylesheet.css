@@ -1,10 +1,15 @@
 /*CURRENT CUSTOM CSS*/
+@font-face{
+	font-family: "source-code";
+	src: url('../fonts/SourceCodePro-Light.ttf') format('truetype');
+}
 
 body {
 	margin: 0 0 0 0 !important;
 	padding: 0;
 	background-color: #181818;
-	font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+	font-family: 'source-code';
+	/*font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;*/
 }
 
 h1{
@@ -106,11 +111,29 @@ table.navtable2 td{
 }
 
 .text_holder{
-	max-width: 600px;
+	max-width: 1200px;
 }
 
 .cursor{
 	float:left;
+}
+
+.m_holder{
+	width: 100%;
+	display: block;
+	overflow: auto;
+}
+
+.img_holder{
+	display: block;
+	float: left;
+	height: 250px;
+	margin-left: 30px;
+
+}
+
+.menu_p{
+	float: left;
 }
 
 .m_desc{
