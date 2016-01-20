@@ -28,7 +28,7 @@
     </div>
 
     </br>
-    
+
     <h1>Portfolio</h1>
 
     > ./list
@@ -52,7 +52,8 @@
 
     <div class="text">> &nbsp;</div>
     <div class="m_name"></div>
-    <div class="m_desc"></div>
+    <div class="text_holder"><div class="m_desc"></div></div>
+    <div class="spacer"></div>
     <div class="m_spacer">>&nbsp;</div>
     <div class="cursor">|</div>
     </br>
@@ -96,6 +97,7 @@
     menu_desc[7] = "Using PyGame, this program in simulates cars learning how to drive around a circular track using genetic algorithms.</br></br>"
 
     $(document).ready(function(){
+        $('.spacer').hide();
         $('.m_name').hide();
         $('.m_desc').hide();
         $('.m_spacer').hide();
@@ -107,7 +109,7 @@
             $('.img_holder').html(img_code[$(this).index()]);
             $('.m_name').html(menu_name[$(this).index()]).show();
             $('.m_desc').html(menu_desc[$(this).index()]).show();
-            $('.m_spacer').show();
+            $('.m_spacer, .spacer').show();
 
         }, function(){
             $(this).removeClass("hover");
