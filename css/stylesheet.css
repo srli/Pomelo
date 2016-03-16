@@ -50,7 +50,7 @@ a:active {
 	color: 	#E0E0E0;
 }
 
-.container_home{		
+.container_home{
 	width: 80%;
 	position: absolute;
 	margin: auto;
@@ -58,7 +58,7 @@ a:active {
 	margin-top: 120px;
 }
 
-.container{		
+.container{
 	width: 80%;
 	position: absolute;
 	margin: auto;
@@ -92,7 +92,7 @@ table.navtable{
 }
 
 table.navtable td{
-	padding-right: 10px; 
+	padding-right: 10px;
 }
 
 table.navtable2{
@@ -100,7 +100,7 @@ table.navtable2{
 }
 
 table.navtable2 td{
-	padding-right: 50px; 
+	padding-right: 50px;
 }
 
 
@@ -138,6 +138,7 @@ table.navtable2 td{
 
 .m_desc{
 	width: 100%;
+	max-width: 1200px;
 	float: left;
 }
 
@@ -148,4 +149,3 @@ table.navtable2 td{
 .writer{
 	float:left;
 }
-

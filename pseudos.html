@@ -29,7 +29,7 @@
     </div>
 
     </br>
-    
+
     <h1 style="margin-bottom:0;"><a href="portfolio.html">Portfolio</a>.PseudOS</h1>
     <table class="navtable2">
         <tr>
@@ -48,28 +48,51 @@
         <a href="jimmy.html">jimmy; </a>
         <a href="genecar.html">genetic_car; </a>
     </div>
-    
+
     </br>
     > ./intro</br>
-    <img src='img/pseudos/pseudOS.jpg' height='250px'>  
+    <img src='img/pseudos/pseudOS.jpg' height='250px'>
 <!--     <img src='img/edwin/head_large.jpg' height='250px'> --></br>
     <a href="https://github.com/aloverso/SoftwareSystems/tree/master/os">download source code</a></br>
     </br>
 
     > ./stats</br>
-    Status: Completed Dec/2015</br>
+    Status: Completed Dec/2015 </br>
     Languages: C, Assembly</br>
-    Software: Putty, QEMU</br>
+    Software: PuTTY, QEMU</br>
     Hardware: Raspberry Pi2, UART Cable</br>
+    Documentation: Complete -- <a href="http://blog.justsophie.com/pseudos-a-baremetal-raspberry-pi-os/" target="_blank">Verbose Debrief</a></br>
     </br>
 
     > ./documentation</br>
-    Made a fake os
+    PseudOS is basic implementation of a baremetal Raspberry PI operating system.</br>
+    Take a look at the video below for a demonstration of how it works. We demonstrate that our operating system can simultaneously blink the status LED on the RaspPi while listening for commands over UART.</br>
+    <iframe src="https://www.youtube.com/embed/jyQzcuLt2gA?rel=0&amp;controls=1&amp;showinfo=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></br>
+
+    </br>
+    Here's the slide deck we made for our final presentation.</br>
+    <iframe src="https://docs.google.com/presentation/d/1KcVODY3Bz0wwpP2_ySXiIo7kfaCRkcswHA8EwpAhRBQ/embed?start=false&amp;loop=true&amp;delayms=30000" width="540" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+    </br></br>
+    As this was all baremetal programming, any functions we wanted in our OS we had to implement ourselves. The lack of malloc() and free() was somewhat of an issue, but we skirted around it by passing all the necessary variables around by reference. We didn't write any video drivers, so PseudOS itself is completely UART based and must be accessed via PuTTY when running on the RaspPi, or through the text interface when virtualized through QEMU.
+
+    </br></br>
+    My major contributions to this project were the command line and the calculator.
+
+    </br></br>
+    We wrote a pseudo-command line to allow control of the OS, which allows the user to write anything in an 80-character array that automatically checks for overflow. Currently, the OS can recognize four commands, "calc", "blink", "help", and "stop". You can see this functionality in the video above.
+
+    </br></br>
+    The calculator application lets the user add, subtract, multiple, or divide with positive or negative integers. The challenge for this was largely in converting UART character arrays into integers and vice versa. Solving the suspiciously interview-question-esque problem was actually pretty fun. Ultimately, the conversion was done with some ASCII to int conversions and modular math. The code for this can be viewed in the Github link and in the slideshow above.
+
     </br>
     </br>
-    
+
     <div class="text">> &nbsp;</div>
     <div class="cursor">|</div>
+
+  </br>
+  </br>
 
 </div>
 <!-- <div class="footer">&copy; Sophia Li 2016</div> -->
