@@ -7,8 +7,8 @@
 body {
 	margin: 0 0 0 0 !important;
 	padding: 0;
-	/*background-color: #f7f7f7;*/
-	background-color: #181818;
+	background-color: #f7f7f7;
+	/*background-color: #181818;*/
 	font-family: 'source-code';
 	/*font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;*/
 }
@@ -23,27 +23,27 @@ h1{
 
 a:link {
 	text-decoration: none;
-	/*color: #0087fa;*/
-    color: #5cd9fd;
+	color: #0087fa;
+    /*color: #5cd9fd;*/
 
 }
 
 a:visited {
 	text-decoration: none;
-	/*color: #0087fa;*/
-    color: #5cd9fd;
+	color: #0087fa;
+    /*color: #5cd9fd;*/
 }
 
 a:hover {
 	text-decoration: none;
-	/*color: #5cd9fd;*/
-    color: #AEECFE;
+	color: #5cd9fd;
+    /*color: #AEECFE;*/
 }
 
 a:active {
 	text-decoration: none;
-	/*color: #0087fa;*/
-    color: #5cd9fd;
+	color: #0087fa;
+    /*color: #5cd9fd;*/
 }
 
 /*CONTENT*/
@@ -52,8 +52,8 @@ a:active {
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	cursor: default;
-	/*color: #131526;*/
-	color: 	#E0E0E0;
+	color: #131526;
+	/*color: 	#E0E0E0;*/
 }
 
 .container_home{
@@ -144,8 +144,8 @@ table.navtable2 td{
 
 .m_desc{
 	width: 100%;
-	max-width: 1200px;
 	float: left;
+/*	border: 1px solid red;*/
 }
 
 .spacer{
@@ -158,5 +158,6 @@ table.navtable2 td{
 }
 
 .writer{
+	max-width: 1200px;
 	float:left;
 }
