@@ -44,14 +44,24 @@ Have a great day!
     </div>
     <div class="m_name"></div>
     <div class="m_desc"></div>
-    <div class="m_spacer">>&nbsp;</div>
+    <!-- <div class="m_spacer">>&nbsp;</div> -->
+    </br>
+    <div class="text">> ./snapshot</div>
+    </br>
+    <div class="text_holder">
+
+      blah blah blah
+
+
+    </div>
+    <div class="text">> &nbsp;</div>
     <div class="cursor">|</div>
 </div>
 <!-- <div class="footer">&copy; Sophia Li 2016</div> -->
 </div>
 
 <script type="text/javascript">
-$('.menu').hide();
+// $('.menu').hide();
 $('.m_name').hide();
 $('.m_desc').hide();
 $('.m_spacer').hide();
@@ -75,11 +85,11 @@ menu_desc[4] = "Forwards to my external blog.</br></br>"
 $(document).ready(function(){
 
     setInterval('cursorAnimate()', 800);
-    captionEl = $('.writer');
-    caption = captionEl.html();
-    captionEl.html('');
+    // captionEl = $('.writer');
+    // caption = captionEl.html();
+    // captionEl.html('');
 
-    setTimeout('type()', 500);
+    // setTimeout('type()', 500);
 
     $(".menu li").hover(function(){
         $(this).addClass("hover");
@@ -92,16 +102,17 @@ $(document).ready(function(){
 
 });
 
-function type() {
-    captionEl.html(caption.substr(0, captionLength++));
-    if(captionLength < caption.length+1) {
-        setTimeout('type()', Math.floor(Math.random() * 100) + 60 );
-    } else {
-        captionLength = 0;
-        caption = '';
-        setTimeout("$('.menu').show()", 1000);
-    }
-}
+// function type() {
+//     captionEl.html(caption.substr(0, captionLength++));
+//     if(captionLength < caption.length+1) {
+//         setTimeout('type()', Math.floor(Math.random() * 100) + 60 );
+//     }
+//     else {
+//         captionLength = 0;
+//         caption = '';
+//         setTimeout("$('.menu').show()", 1000);
+//     }
+// }
 
 function cursorAnimate(){
 $('.cursor').animate({
