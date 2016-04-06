@@ -8,6 +8,8 @@
 	max-width: 1000px;
 	list-style: none;
 	text-align: center;
+  height: 300px;
+  /*border: 2px solid red;*/
 }
 
 /* Common style */
@@ -16,9 +18,9 @@
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 360px;
+	min-width: 350px;
+	max-width: 350px;
+	max-height: 250px;
 	width: 48%;
 	height: auto;
 	background: #3085a3;
@@ -91,7 +93,20 @@
 /*-----------------*/
 
 figure.effect-hera {
-	background: #303fa9;
+  /*background: 	#E0E0E0;*/
+  background: #131526;
+
+	/*background: #000000;*/
+}
+
+figure.effect-hera img {
+	opacity: 0.6;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-hera:hover img {
+	opacity: 0.4;
 }
 
 figure.effect-hera h2 {
@@ -181,6 +196,7 @@ figure.effect-hera:hover h2 {
 	-webkit-transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
 	transform: translate3d(-50%,-50%,0) scale3d(0.8,0.8,1);
 }
+
 
 figure.effect-hera:hover p i:empty {
 	-webkit-transform: translate3d(0,0,0);

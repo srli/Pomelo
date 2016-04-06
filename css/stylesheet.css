@@ -16,6 +16,7 @@ body {
 h1{
 	font-weight: normal;
 	font-size: 2em;
+	padding: 0;
 }
 
 /*DEFINING GLOBAL LINK DEFINITIONS*/
