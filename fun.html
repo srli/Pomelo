@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sophia Li: Fun
+    </title>
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel='stylesheet' href='css/stylesheet.css'  type="text/css"/>
+    <link rel="stylesheet" href="css/grid_component.css" type="text/css"  />
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+
+
+</head>
+
+<body>
+<div class="content">
+    <div class="container">
+        <div class="navbar">
+            <table class="navtable">
+              <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="portfolio.html">Portfolio</a></td>
+                <td><a href="about.html">About</a></td>
+                <td><a href="contact.html">Contact</a></td>
+                <td><a href="http://blog.justsophie.com">Blog</a></td>
+              </tr>
+            </table>
+        </div>
+
+        </br>
+
+        <h1>Fun</h1>
+
+        > ./sophies_life
+
+        <ul class="grid effect-1" id="grid">
+  				<li><img src="img/web_img/cake.jpg"></li>
+  				<li><img src="img/web_img/cake.jpg"></li>
+          <li><img src="img/web_img/cake.jpg"></li>
+          <li><img src="img/web_img/cake.jpg"></li>
+          <li><img src="img/web_img/cake.jpg"></li>
+          <li><img src="img/web_img/cake.jpg"></li>
+  			</ul>
+
+
+      </br>
+      </br>
+
+        <div class="text">> Thanks for reading, have a nice day. :-)</div>
+        <div class="cursor">|</div>
+        </br>
+        </br>
+    </div>
+<!-- <div class="footer">&copy; Sophia Li 2016</div> -->
+
+</div>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/imagesloaded.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/AnimOnScroll.js"></script>
+<script>
+  new AnimOnScroll( document.getElementById( 'grid' ), {
+    minDuration : 0.4,
+    maxDuration : 0.7,
+    viewportFactor : 0.2
+  } );
+</script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    setInterval('cursorAnimate()', 800);
+});
+
+
+function cursorAnimate(){
+$('.cursor').animate({
+    opacity: 0
+}, 'medium', 'swing').animate({
+    opacity: 1
+}, 'medium', 'swing');
+}
+
+</script>
+</body>
+</html>

@@ -109,6 +109,8 @@ table.navtable2 td{
 	padding-right: 50px;
 }
 
+/*IMAGES*/
+.defferred-block { display: none; }
 
 /*TEXT*/
 .text{
