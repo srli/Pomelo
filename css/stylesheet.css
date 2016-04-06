@@ -120,6 +120,10 @@ table.navtable2 td{
 	max-width: 1200px;
 }
 
+.pdf_holder{
+	max-width: 1200px;
+}
+
 .cursor{
 	float:left;
 }
