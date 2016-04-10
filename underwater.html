@@ -51,8 +51,9 @@
 
     </br>
     > ./intro</br>
-    <img src='img/underwater/underwater.jpg' height='250px'>
-<!--     <img src='img/edwin/head_large.jpg' height='250px'> --></br>
+    <iframe src="https://www.youtube.com/embed/o9uGDVQWVPI?t=36s&rel=0&amp;controls=1&amp;showinfo=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </br>
+    (Apologies for the bad recording quality, as a freshman I didn't really know what good documentation meant. Full-screen for the best effect!)</br>
     <a href="https://github.com/srli/Structured-Light">download source code</a></br>
     </br>
 
@@ -61,17 +62,30 @@
     Languages: C++</br>
     Software: OpenCV</br>
     Hardware: Horizontal green laser, Webcam</br>
-    Documentation: In Progress</br>
+    Documentation: Complete</br>
     </br>
 
     > ./documentation</br>
-    </br>
-    </br>
-    Underwater localization was a project done for research over Summer 2014. The robotics lab was working on a robotic tuna, and one of the problems that the tuna faced was obstacle avoidance underwater. Because the majority of
-
+    Underwater localization was a project done for research over Summer 2014. The robotics lab was working on a robotic tuna, and one of the problems that the tuna faced was obstacle avoidance underwater. Because the majority of localization methods rely on some sort of camera or IR lidars that wouldn't be effective underwater, we decided to go with a green laser instead.</br>
+  </br>
+    We used a simplified version of structured light, where the depth of the displacement determined the distance of the object from the camera. The script requires an initial camera calibration, so it's flexible for multiple types of cameras and environment setups. Below is an example of the greyscale video output that a user sees when running the program.</br>
+  <img src="img/underwater/video_feed.jpg" height="250"/></br>
+</br>
+  Though it appears as if distance calculations are happening directly off the greyscale video feed, the structured light distance calculations can only occur after the image has been filtered several times.</br>
+</br>
+  The order of OpenCV operations is:</br>
+  Raw Image -> Greyscale -> Sobel filter -> Gaussian blur -> Canny edge -> Contour detection</br>
+</br>
+  The Sobel filter uses a convolution kernel that increases the intensity of horizontal lines, while decreasing the intensity of verticle lines. The Canny edge detector then takes this image and highlights the edges further. The Contour detection operation then takes the highlighted edges and finds the most prominent ones to do distance calculations on. The multiple layers of filtering allow us to have a fairly clean line detection reading. An example of what this looks like:</br>
+  <img src="img/underwater/dist_feed.jpg" height="250"/></br>
+</br>
+  However, to the robot, what's more important is where it can go versus where it can't go. To simplify the information further, I took the information outputted from the distance calculations and used it to fill out an occupancy grid. The X-axis is the number of degrees the object is from the center (0 degrees), while the Y-axis is the distance from the camera in centimeters.</br>
+  <img src="img/underwater/underwater.jpg" height="300"/></br>
+</br>
+  This method allows us to transport information about potential obstacles in a scene in a very compact manner over ROS. Since this was a project that I did back in freshman year, there are several places where the code can be optimized. However, I did basically teach myself C++ though this project, which is probably the thing I'm most proud about. :)</br></br>
     <div class="text">> &nbsp;</div>
     <div class="cursor">|</div>
-
+</br></br>
 </div>
 <!-- <div class="footer">&copy; Sophia Li 2016</div> -->
 
