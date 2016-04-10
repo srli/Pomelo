@@ -99,10 +99,15 @@
     menu_desc[7] = "Using PyGame, this program simulates cars learning how to drive around a circular track using genetic algorithms.</br></br>"
 
     $(document).ready(function(){
-        $('.spacer').hide();
-        $('.m_name').hide();
-        $('.m_desc').hide();
-        $('.m_spacer').hide();
+        // $('.spacer').hide();
+        // $('.m_name').hide();
+        // $('.m_desc').hide();
+        // $('.m_spacer').hide();
+
+        $('.img_holder').html(img_code[0]);
+        $('.m_name').html(menu_name[0]).show();
+        $('.m_desc').html(menu_desc[0]).show();
+        $('.m_spacer, .spacer').show();
 
         setInterval('cursorAnimate()', 800);
 

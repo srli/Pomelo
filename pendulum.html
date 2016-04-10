@@ -72,7 +72,7 @@
     Pictured above is an example output of our N-case compound pendulum simulator. Below is a screen capture of the GUI used to generate that output. </br>
     <img src="img/pendulum/n5_gui.png" height="250"/></br>
     </br>
-    The GUI is written in Tkinter, where the user inputs are passed into a Python script that generates the Matlab script for the pendulum motion. We tried to write the entire simulator in Matlab, but on the fly matrix generation for the pendulums took an eternity when done in Matlab and seconds in Python. </br>
+    The GUI is written in Tkinter, where the user inputs are passed into a Python script that generates the Matlab script for the pendulum motion. We tried to write the entire simulator in Matlab, but on the fly matrix generation for the pendulums took an eternity when done in Matlab and seconds in Python. Please take a look at the verbose debrief for a more in depth explanation of how we generalized the equations of motion for ccompound pendulums.</br>
 
     </br>
     After running the output Matlab script in Matlab, the code also generates energy and position/velocity/acceleration plots. </br></br>
@@ -87,7 +87,7 @@
     Position/Velocity/Acceleration:</br>
     <img src="img/pendulum/n5_pva.jpg" height="300"/></br>
     </br>
-    Here we see how each additional pendulum link expriances more displacement than the ones before it, which makes sense given that the motion of the last link of the pendulum is dependant on the motion of all the other links before it. We find that acceleration in all the pendulums seem to follow a similar pattern, because all of the pendulums are linked.
+    Here we see how each additional pendulum link experiances more displacement than the ones before it, which makes sense given that the motion of the last link of the pendulum is dependant on the motion of all the other links before it. We find that acceleration in all the pendulums seem to follow a similar pattern, because all of the pendulums are linked.
 
     </div>
     </br>
