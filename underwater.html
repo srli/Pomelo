@@ -52,8 +52,8 @@
     </br>
     > ./intro</br>
     <iframe src="https://www.youtube.com/embed/o9uGDVQWVPI?t=36s&rel=0&amp;controls=1&amp;showinfo=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-    </br>
-    (Apologies for the bad recording quality, as a freshman I didn't really know what good documentation meant. Full-screen for the best effect!)</br>
+    <div class="text_holder"></br>
+    (Apologies for the bad recording quality, as a freshman I didn't really know what good documentation meant. Full-screen for the best effect!)</br></div>
     <a href="https://github.com/srli/Structured-Light">download source code</a></br>
     </br>
 
@@ -66,6 +66,7 @@
     </br>
 
     > ./documentation</br>
+    <div class="text_holder">
     Underwater localization was a project done for research over Summer 2014. The robotics lab was working on a robotic tuna, and one of the problems that the tuna faced was obstacle avoidance underwater. Because the majority of localization methods rely on some sort of camera or IR lidars that wouldn't be effective underwater, we decided to go with a green laser instead.</br>
   </br>
     We used a simplified version of structured light, where the depth of the displacement determined the distance of the object from the camera. The script requires an initial camera calibration, so it's flexible for multiple types of cameras and environment setups. Below is an example of the greyscale video output that a user sees when running the program.</br>
@@ -83,6 +84,7 @@
   <img src="img/underwater/underwater.jpg" height="300"/></br>
 </br>
   This method allows us to transport information about potential obstacles in a scene in a very compact manner over ROS. Since this was a project that I did back in freshman year, there are several places where the code can be optimized. However, I did basically teach myself C++ though this project, which is probably the thing I'm most proud about. :)</br></br>
+</div>
     <div class="text">> &nbsp;</div>
     <div class="cursor">|</div>
 </br></br>
