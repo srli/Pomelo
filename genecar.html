@@ -29,7 +29,7 @@
     </div>
 
     </br>
-    
+
     <h1 style="margin-bottom:0;"><a href="portfolio.html">Portfolio</a>.Genetic_Car</h1>
     <table class="navtable2">
         <tr>
@@ -48,12 +48,13 @@
         <a href="jimmy.html">jimmy; </a>
         <a href="genecar.html">genetic_car; </a>
     </div>
-    
+
     </br>
     > ./intro</br>
-    <img src='img/gencar/genCarUI.png' height='250px'>  
-<!--     <img src='img/edwin/head_large.jpg' height='250px'> --></br>
+    <iframe src="https://www.youtube.com/embed/KtYzllO-Elk?rel=0&amp;controls=1&amp;showinfo=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></br>
+
     <a href="https://github.com/rileychapman/geneticCar">download source code</a></br>
+    <a href="http://rileychapman.github.io/geneticCar/">visit project website</a></br>
     </br>
 
     > ./stats</br>
@@ -64,13 +65,29 @@
     </br>
 
     > ./documentation</br>
-    taught cars how to drive
+    <div class="text_holder">
+      For our Software Design final project, we wrote a simulation program that would allow you to draw a track, then generate cars that would eventually learn how to drive around said track. Here's the slide deck we used for our final presentation:</br>
+      <iframe src="https://docs.google.com/presentation/d/19Rvq0ZM46b6EHsD4HGqgEygVku50xUYhsJhBq-BrHHU/embed?start=false&amp;loop=false&amp;delayms=30000" width="540" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </br></br>
+
+      The most important slide out of that presentation is this one:</br>
+      <img src="img/gencar/genecar_model.png" height="250"/></br>
     </br>
+      We generate 15 cars that start with random constants that relate their wheels relative to the car's distance from the wall. As the the cars progress through the generations, the best constants are selected for via our parameters (i.e how fast the car makes it around the track) and the best two survive and act like "parents". Like in natural evolution, the two parent matrices are randomly combined and mutated to form the next generation of the next 15 matrices. This method of combination and mutation ensures that each generation builds from the previous, hopefully in the direction of improvement.</br></br>
+
+      This was my first shot at programming in a team environment, and I had learned a bunch about Github and merge conflicts thanks to this. My main contribution to this project was detecting the correct distance of the wall from each car, and the UI elements on the right side of the screen. The UI of the program also went through some drastic changes:</br>
+
+      <img src="img/gencar/gencar_gui.gif" height="300"/></br>
     </br>
-    
+      In the end, we got a working program that could successfully generate a car that would somehow figure its way around a track completely autonomously. Looking back on it now, there are so many places where we could've improved the code. Scene loading is really lousy, and we should have created a different way to generate the walls of the track since it errors quite easily as it is now. However, for one of the first ever projects I've done at Olin, I'm still pretty darn proud of it. :)
+    </br></br>
+
+    </div>
+
     <div class="text">> &nbsp;</div>
     <div class="cursor">|</div>
-
+  </br>
+  </br>
 </div>
 <!-- <div class="footer">&copy; Sophia Li 2016</div> -->
 

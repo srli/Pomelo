@@ -31,7 +31,7 @@
 
     <h1>Portfolio</h1>
 
-    > ./list
+    > ./project_list
     <div class="m_holder">
         <div class="menu_p">
             Listed in order of recency. 1 = newest. </br>
@@ -49,11 +49,11 @@
         </div>
         <div class="img_holder"></div>
     </div>
-
     <div class="text">> &nbsp;</div>
     <div class="m_name"></div>
     <div class="text_holder"><div class="m_desc"></div></div>
     <div class="spacer"></div>
+
     <div class="m_spacer">>&nbsp;</div>
     <div class="cursor">|</div>
     </br>
@@ -64,6 +64,8 @@
 </div>
 
 <script type="text/javascript">
+  // $('.menu').hide();
+
     var captionLength = 0;
     var caption = '';
     var menu_name = new Array();
@@ -99,17 +101,19 @@
     menu_desc[7] = "Using PyGame, this program simulates cars learning how to drive around a circular track using genetic algorithms.</br></br>"
 
     $(document).ready(function(){
-        // $('.spacer').hide();
-        // $('.m_name').hide();
-        // $('.m_desc').hide();
-        // $('.m_spacer').hide();
-
         $('.img_holder').html(img_code[0]);
         $('.m_name').html(menu_name[0]).show();
         $('.m_desc').html(menu_desc[0]).show();
         $('.m_spacer, .spacer').show();
 
         setInterval('cursorAnimate()', 800);
+        //
+        // captionEl = $('.writer');
+        // caption = captionEl.html();
+        // captionEl.html('');
+        //
+        // setTimeout('type()', 500);
+
 
         $(".menu_p li").hover(function(){
             $(this).addClass("hover");
@@ -123,6 +127,18 @@
         });
 
     });
+
+    // function type() {
+    //     captionEl.html(caption.substr(0, captionLength++));
+    //     if(captionLength < caption.length+1) {
+    //         setTimeout('type()', Math.floor(Math.random() * 100) + 60 );
+    //     }
+    //     else {
+    //         captionLength = 0;
+    //         caption = '';
+    //         setTimeout("$('.menu').show()", 1000);
+    //     }
+    // }
 
     function cursorAnimate(){
     $('.cursor').animate({
