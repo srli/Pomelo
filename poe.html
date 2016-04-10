@@ -64,12 +64,29 @@
     Software: OpenCV, Tkinter, <a href="http://www.elcojacobs.com/shiftpwm/" target="_blank">ShiftPWM</a></br>
     Hardware: Arduino Uno, Raspberry Pi2, PiTFT</br>
     RGB LEDs, Photoresistor, MDF Housing</br>
-    Documentation: In Progress </br>
+    Documentation: Complete</br>
     </br>
 
     > ./documentation</br>
     <div class="text_holder">
-
+    Principles of Engineering (POE) is a class that all Olin students are required to take as part of their diploma. The core goal of this class is to bring together students that have different areas of experiance (mechanical, electrical, software) and have them build a really cool project that integrates everything.</br>
+  </br>
+    Our team built a desktop companion that has a passive idle motion sequence, but will respond to external stimulus. The "brain" of the piece is a RaspPi connected to a PiTFT display. The actuation of the spines and the color changing LEDs are controlled via an Arduino that is hooked to the RaspPi via a serial cable. My main contribution to this project was the face detection with OpenCV and the expression display on the mini-LCD, the C code for the Arduino in order to get the spines of the sculture moving according to the relevent inputs, and the overall state machine responsible for the sculpture's ability to respond to different stimuli.</br>
+  </br>
+    Because all the important calculations were done on the RaspPi, I had to be careful about optimizing my code since the RaspPi would get hung up on the OpenCV operations if I used them too liberally. It was an interesting challenge, and in the end I had to sacrifice accuracy of the facial recognition for an increase in general responsiveness for the whole sculpture as a whole. I'd like to spend more time on this problem in future contexts, so I'm definitely looking for more opportunities to do heavy calculations with a Pi on other projects.</br>
+  </br>
+    Some of the things the sculpture responds to are:</br>
+  </br>
+    Sleep when it's dark, wake up when it gets brighter.</br>
+    <img title="source: imgur.com" src="http://i.imgur.com/S1MOgYe.gif" height="300px">
+  </br></br>
+    Respond with surprise when the front panel is knocked.</br>
+    <img title="source: imgur.com" src="http://i.imgur.com/R2MoYRf.gif" height="300px">
+  </br></br>
+    Recognize faces, then get excited when the person smiles.</br>
+    <img title="source: imgur.com" src="http://i.imgur.com/BIIzC1G.gif" height="300px">
+  </br></br>
+    Awww, it's too cute!  </br></br>
 
     </div>
     <div class="text">> &nbsp;</div>
