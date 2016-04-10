@@ -18,6 +18,12 @@ h1{
 	font-size: 2em;
 	padding: 0;
 }
+/*
+#player2 {
+    position:absolute;
+    left:195px;
+    top:100px;
+}*/
 
 /*DEFINING GLOBAL LINK DEFINITIONS*/
 /*Default set to inherit from parent div, TO-DO: Set defaults*/
