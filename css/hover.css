@@ -1,3 +1,7 @@
+/*Taken from here:
+http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
+*/
+
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .grid {
