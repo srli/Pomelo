@@ -67,11 +67,9 @@
 
     > ./documentation</br>
     <div class="text_holder">
-      For our Software Design final project, we wrote a simulation program that would allow you to draw a track, then generate cars that would eventually learn how to drive around said track. Here's the slide deck we used for our final presentation:</br>
-      <iframe src="https://docs.google.com/presentation/d/19Rvq0ZM46b6EHsD4HGqgEygVku50xUYhsJhBq-BrHHU/embed?start=false&amp;loop=false&amp;delayms=30000" width="540" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-    </br></br>
+      For our Software Design final project, we wrote a simulation program that would allow you to draw a track, then generate cars that would eventually learn how to drive around said track.
 
-      The most important slide out of that presentation is this one:</br>
+      Here's how we modeled each car:</br>
       <img src="img/gencar/genecar_model.png" height="250"/></br>
     </br>
       We generate 15 cars that start with random constants that relate their wheels relative to the car's distance from the wall. As the the cars progress through the generations, the best constants are selected for via our parameters (i.e how fast the car makes it around the track) and the best two survive and act like "parents". Like in natural evolution, the two parent matrices are randomly combined and mutated to form the next generation of the next 15 matrices. This method of combination and mutation ensures that each generation builds from the previous, hopefully in the direction of improvement.</br></br>
